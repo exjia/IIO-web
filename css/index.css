@@ -22,8 +22,9 @@
 	width: 375px;
 	height: 470px;
 }
-.CentralContent_left .pictureshow{
-	width: 100%;
+.CentralContent_left .pictureshow img{
+	width: 423px;
+	height: 111px;
 }
 .blueVertical{
 	width:5px;
@@ -44,13 +45,26 @@
 	color:rgba(78,85,105,1);
 	margin-left: 10px;
 }
+/* 文字变色 */
+.mechanismInformation ul li:hover{
+	color: #3968CC;
+}
 /* flex布局最外层 */
 .flex{
 	display: flex;
 	display: -webkit-flex;
 }
 .CentralContent_left .mechanismInformation img{
-	margin-top: 21px;
+	margin-top: 22px;
+	width: 407px;
+	height: 70px;
+}
+.CentralContent_left .mechanismInformation .picture_f{
+	margin-top: 31px;
+}
+.CentralContent_left .mechanismInformation .picture_t{
+	margin-top: 28px;
+	height: 86px;
 }
 .CentralContent_left .mechanismInformation .centralButton{
 	width: 152px;
@@ -82,13 +96,17 @@
 	width: 100%;
 	height: 96px;
 	margin-top: 50px;
-	padding-bottom: 44px;
+	/* padding-bottom: 44px; */
 }
 .pageBottom img{
 	margin: 0 auto;
 	display: block;
 }
 /* 中间部分 */
+.CentralContent_middle .pictureshow img{
+	width: 375px;
+	height: 111px;
+}
 .CentralContent_middle .mechanismInformation{
 	margin-top: 38px;
 }
@@ -100,12 +118,13 @@
 	margin-left: 10px;
 }
 .CentralContent_middle .mechanismInformation ul{
-	/* height: 100%; */
+	margin-top: 27px;
 }
 .CentralContent_middle .mechanismInformation ul li{
 	font-size:16px;
 	font-family:PingFang SC;
 	font-weight:400;
+	line-height: 23px;
 	margin-top: 23px;
 }
 .CentralContent_middle .mechanismInformation ul li span{
@@ -115,6 +134,10 @@
 	padding-left: 15px;
 }
 /* 右侧部分 */
+.CentralContent_right .pictureshow img{
+	width: 380px;
+	height: 111px;
+}
 .CentralContent_right .mechanismInformation{
 	margin-top: 38px;
 }
@@ -126,15 +149,55 @@
 	margin-left: 10px;
 }
 .CentralContent_right .mechanismInformation ul{
-	/* height: 100%; */
+	margin-top: 27px;
 }
 .CentralContent_right .mechanismInformation ul li{
 	font-size:16px;
 	font-family:PingFang SC;
 	font-weight:400;
 	margin-top: 23px;
+	line-height: 23px;
 }
 .CentralContent_right .mechanismInformation ul li span{
+	font-size: 15px;
+	color: #BABABA;
+	font-family: PingFangSC-Regular;
+	padding-left: 15px;
+}
+/* 下方表格内容 */
+.CentralContentBottom{
+	padding-top: 0;
+}
+.CentralContentBottom .CentralContent_left .mechanismInformation .lawsRegulations{
+	margin-top: 18px;
+}
+.CentralContentBottom .CentralContent_left .lawsRegulations .button{
+	width:auto;
+	display:inline-block !important; 
+	display:inline;
+	height: 28px;
+	padding:  0 30px;
+	margin: 0 0 7px 7px;
+	line-height: 28px;
+	text-align: center;
+	border: 1px solid #D2D2D2;
+}
+/* 选中样式 */
+.CentralContentBottom .CentralContent_left .lawsRegulations .choose{
+	color: #3968CC;
+	border-color: #0090FF;
+}
+.CentralContent_left .mechanismInformation ul{
+	margin-top: 10px;
+}
+.CentralContent_left .mechanismInformation ul li{
+	font-size:16px;
+	font-family:PingFang SC;
+	font-weight:400;
+	line-height: 23px;
+	margin-bottom: 23px;
+}
+.CentralContent_left .mechanismInformation ul li span{
 	font-size: 15px;
 	color: #BABABA;
 	font-family: PingFangSC-Regular;

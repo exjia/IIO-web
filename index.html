@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="utf-8">
 		<title>首页</title>
-		<link rel="stylesheet" type="text/css" href="css/reset.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/antd.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/lty_list.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
-		<!--[if lte IE 8
-			]><script>
-				window.location.href =
-					'http://support.dmeng.net/upgrade-your-browser.html?referrer=' +
-					encodeURIComponent(window.location.href);
-			</script><!
-		[endif]-->
-		<!--[if lte IE 9]>
-			<link rel="stylesheet" type="text/css" href="css/style-ie.css" />
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script> -->
+		<!--[if lte IE 8]><script>window.location.href='http://support.dmeng.net/upgrade-your-browser.html?referrer='+encodeURIComponent(window.location.href);</script><![endif]-->
+		<!--[if lte IE 9]> 
+			<link rel="stylesheet" type="text/css" href="css/style-ie.css">
 		<![endif]-->
-		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+		<script src="http://momentjs.cn/downloads/moment.min.js"></script>
+		<script src="js/antd.min.js"></script>
+		<!-- 国际化 -->
+		<script src="js/antd-with-locales.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	</head>
 	<body>
 		<div id="app">
@@ -25,21 +26,9 @@
 			<div class="bj">
 				<div class="body">
 					<ul style="display: flex;">
-						<li>
-							<img
-								src="images/xxf_logo.png"
-								width="438.1"
-								height="80"
-								class="xxf_logo"
-							/>
-						</li>
-						<li>
-							<input
-								type="text"
-								class="xxf_input"
-								placeholder="举报查询"
-							/>
-						</li>
+						<li><img src="images/logo.png" width="963" height="90" class="xxf_logo"></li>
+						<!-- <li><img src="images/xxf_logo.png" width="438.1" height="80" class="xxf_logo"></li> -->
+						<!-- <li><input type="text" class="xxf_input" placeholder="举报查询" /></li> -->
 					</ul>
 					<div class="xxf_top">
 						<ul class="xxf_nav">
@@ -50,8 +39,10 @@
 							<li><a href="">网络治理</a></li>
 							<li><a href="">机构简介</a></li>
 						</ul>
+						
 						<div class="xxf_time">
 							<ul class="xxf_timeall">
+								<div style="height:0px; width:0px; border-top:solid 51px #204490; border-right:solid 30px transparent;"></div> 
 								<li>
 									<ul>
 										<li class="xxf_year">2020年01月</li>
@@ -68,32 +59,21 @@
 						<div class="CentralContent">
 							<div class="CentralContent_left">
 								<div class="pictureshow">
-									<img src="images/picture_left.png" />
+									<img src="images/picture_left.png">
 								</div>
 								<div class="mechanismInformation">
 									<span class="blueVertical"></span>
 									<span>
-										<h3>机构简介</h3>
+										<h3>专题专栏</h3>
 									</span>
-									<img src="images/picture_mechanism.png" />
-									<div class="flex centralExplain">
-										<div class="centralButton">
-											<button type="button" class="re">
-												领导成员
-											</button>
-											<button type="button" class="">
-												组织构成
-											</button>
-										</div>
-										<div class="centralContent">
-											长春市互联网信息办公室是国务院领导下的国家行政机关，对省人民代表大会和国务院负责并报告工作，由省长、副省长、秘书长、各厅厅长、各委员会主任，省外事办公室主任组成
-										</div>
-									</div>
+									<img src="images/picture_f.png" class="picture_f">
+									<img src="images/picture_s.png" >
+									<img src="images/picture_t.png" class="picture_t">
 								</div>
 							</div>
 							<div class="CentralContent_middle">
-								<div class="">
-									<img src="images/picture_middle.png" />
+								<div class="pictureshow">
+									<img src="images/picture_middle.png">
 								</div>
 								<div class="mechanismInformation">
 									<span class="blueVertical"></span>
@@ -121,8 +101,8 @@
 								</div>
 							</div>
 							<div class="CentralContent_right">
-								<div class="">
-									<img src="images/picture-right.png" />
+								<div class="pictureshow">
+									<img src="images/picture_right.png">
 								</div>
 								<div class="mechanismInformation">
 									<span class="blueVertical"></span>
@@ -151,26 +131,153 @@
 							</div>
 						</div>
 						<div class="pageBottom">
-							<img src="./images/picture_bottom.png" />
+							<img src="./images/picture_bottom.png">
 						</div>
+						<!-- 下方 -->
+						<div class="CentralContent  CentralContentBottom">
+							<div class="CentralContent_left">
+								<div class="mechanismInformation">
+									<span class="blueVertical"></span>
+									<span>
+										<h3>法律法规</h3>
+									</span>
+									<div class="lawsRegulations">
+										<div class="button" :class="{choose:index == 1}" @click="click(1)">
+											法律
+										</div>
+										<div class="button" :class="{choose:index == 2}" @click="click(2)">
+											行政法规
+										</div>
+										<div class="button" :class="{choose:index == 3}" @click="click(3)">
+											部门规章
+										</div>
+										<div class="button" :class="{choose:index == 4}" @click="click(4)">
+											司法解释
+										</div>
+										<div class="button" :class="{choose:index == 5}" @click="click(5)">
+											规范性文件
+										</div>
+										<div class="button" :class="{choose:index == 6}" @click="click(6)">
+											政策文件
+										</div>
+									</div>
+									
+									<ul v-if="this.index == 1">
+										<li>
+											2019年11月全国受理网络违法和不良信息举报970.8万件
+											<span>2020.01.01</span>
+										</li>
+										<li>
+											国家互联网信息办公室发布《网络信息内容生态治理规定》
+											<span>2020.01.01</span>
+										</li>
+										<li>
+											国家网信办指导有关地方网信办约谈视觉中国网站ICphoto网站负责人即日起两家网站暂停服务全面整改
+											<span>2020.01.01</span>
+										</li>
+									</ul>
+									<ul v-if="this.index == 2">
+										<li>
+											2019年11月全国受理网络违法和不良信息举报970.8万件
+											<span>2020.01.01</span>
+										</li>
+										<li>
+											国家网络信息内容生态治理规定》
+											<span>2020.01.01</span>
+										</li>
+										<li>
+											国家网信网站ICphoto网站负责人即日起两家网站暂停服务全面整改
+											<span>2020.01.01</span>
+										</li>
+									</ul>
+									<ul v-if="this.index == 3">
+										<li>
+											2019年11月全国受理网络违法和不良信息举报970.8万件
+											<span>2020.01.01</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="CentralContent_middle">
+								<div class="mechanismInformation">
+									<span class="blueVertical"></span>
+									<span>
+										<h3>安全警示</h3>
+									</span>
+									<ul>
+										<li>
+											2019年11月全国受理网络违法和不良信息举报970.8万件
+											<span>2020.01.01</span>
+										</li>
+										<li>
+											国家互联网信息办公室发布《网络信息内容生态治理规定》
+											<span>2020.01.01</span>
+										</li>
+										<li>
+											国家网信办指导有关地方网信办约谈视觉中国网站ICphoto网站负责人即日起两家网站暂停服务全面整改
+											<span>2020.01.01</span>
+										</li>
+										<li>
+											国家互联网信息办公室发布《网络信息内容生态治理规定》
+											<span>2020.01.01</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="CentralContent_right">
+								<div class="mechanismInformation">
+									<span class="blueVertical"></span>
+									<span>
+										<h3>网络治理</h3>
+									</span>
+									<ul>
+										<li>
+											2019年11月全国受理网络违法和不良信息举报970.8万件
+											<span>2020.01.01</span>
+										</li>
+										<li>
+											国家互联网信息办公室发布《网络信息内容生态治理规定》
+											<span>2020.01.01</span>
+										</li>
+										<li>
+											国家网信办指导有关地方网信办约谈视觉中国网站ICphoto网站负责人即日起两家网站暂停服务全面整改
+											<span>2020.01.01</span>
+										</li>
+										<li>
+											国家互联网信息办公室发布《网络信息内容生态治理规定》
+											<span>2020.01.01</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
 					</div>
 				</div>
 			</div>
 			<!-- 版权 -->
 			<div class="copyright">
 				<ul class="footer">
-					<li class="footer_img">
-						<img
-							src="images/xxf_footer.png"
-							width="44"
-							height="50"
-						/>
-					</li>
-					<li class="footer_text">长春市网络监管门户网站</li>
-					<li class="footer_text">地址：吉林省长春市新发路329号</li>
-					<li class="footer_text">邮政编码：130051</li>
+					<li class="footer_text">Copyright@版权所有</li>
+					<li class="footer_text">长春市互联网违法和不良信息举报中心</li>
+					<li class="footer_text">吉ICP备05000000号</li>
+					<li class="footer_img"><img src="images/Bz.png" width="14" height="16"></li>
+					<li class="footer_text">吉公网安备 22000002000002号</li>
 				</ul>
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el:'#app',
+			data:{
+				index:1,
+			},
+			methods:{
+				click(index){
+					this.index = index;
+				}
+			},
+		})
+	</script>
 </html>
