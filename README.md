@@ -10,3 +10,6 @@ git push
 git checkout -b dev
 git pull origin master
 git checkout master
+git merge dev
+git branch -d dev
+git push origin master
