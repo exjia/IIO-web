@@ -5,7 +5,6 @@
 		<title>列表</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ant-design-vue@1.6.0/dist/antd.min.css">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/lty_list.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
@@ -16,7 +15,7 @@
 		<script src="http://momentjs.cn/downloads/moment.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/ant-design-vue@1.6.0/dist/antd.min.js"></script>
 		<!-- 国际化 -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ant-design-vue@1.6.0/dist/antd-with-locales.min.js">
+		<link rel="stylesheet" type="application/javascript" href="https://cdn.jsdelivr.net/npm/ant-design-vue@1.6.0/dist/antd-with-locales.min.js">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	</head>
 	<body>
@@ -38,7 +37,7 @@
 
 						<div class="xxf_time">
 							<ul class="xxf_timeall">
-								<div style="height:0px; width:0px; border-top:solid 51px #204490; border-right:solid 30px transparent;"></div>
+								<div style="height:0px; width:0px; border-top:solid 51px #204490; border-right:solid 30px transparent; float: left;" ></div> 
 								<li>
 									<ul>
 										<li class="xxf_year">2020年01月</li>
@@ -107,7 +106,8 @@
 						</div>
 						<!-- 跳转页面 -->
 						<div class="pagenum">
-							<a-pagination show-quick-jumper :default-current="1" :total="50" @change="onChange" />
+							<!-- <a-pagination show-quick-jumper :default-current="1" :total="50" @change="onChange" /> -->
+							<a-pagination show-quick-jumper :default-current="1" :total="50" />
 						</div>
 					</div>
 				</div>
@@ -127,13 +127,10 @@
 	<script>
 		  var vm = new Vue({
 			el: '#app',
-			// data: {
-			// 	locale: zhCN,
-			//     // message: 'Hello Vue.js'
-			// },
+		
 			data() {
 				return {
-					locale: zhCN,
+					
 				};
 			},
 		});

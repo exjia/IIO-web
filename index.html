@@ -5,7 +5,6 @@
 		<title>首页</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ant-design-vue@1.6.0/dist/antd.min.css">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/lty_list.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
@@ -16,7 +15,7 @@
 		<script src="http://momentjs.cn/downloads/moment.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/ant-design-vue@1.6.0/dist/antd.min.js"></script>
 		<!-- 国际化 -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ant-design-vue@1.6.0/dist/antd-with-locales.min.js">
+		<link rel="stylesheet" type="application/javascript" href="https://cdn.jsdelivr.net/npm/ant-design-vue@1.6.0/dist/antd-with-locales.min.js">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	</head>
 	<body>
@@ -41,7 +40,7 @@
 						
 						<div class="xxf_time">
 							<ul class="xxf_timeall">
-								<div style="height:0px; width:0px; border-top:solid 51px #204490; border-right:solid 30px transparent;"></div> 
+								<div style="height:0px; width:0px; border-top:solid 51px #204490; border-right:solid 30px transparent; float: left;" ></div> 
 								<li>
 									<ul>
 										<li class="xxf_year">2020年01月</li>
@@ -58,21 +57,24 @@
 						<div class="CentralContent">
 							<div class="CentralContent_left">
 								<div class="pictureshow">
-									<img src="images/picture_left.png">
+									<a href="">	<img src="images/picture_left.png"> </a>
 								</div>
 								<div class="mechanismInformation">
 									<span class="blueVertical"></span>
 									<span>
 										<h3>专题专栏</h3>
 									</span>
-									<img src="images/picture_f.png" class="picture_f">
-									<img src="images/picture_s.png" >
-									<img src="images/picture_t.png" class="picture_t">
+									<a href=""><img src="images/picture_f.png" class="picture_f"></a>
+									<a href=""> <img src="images/picture_s.png" ></a>
+									<a href=""> <img src="images/picture_t.png" class="picture_t"></a>
+									<!-- <img src="images/picture_f.png" class="picture_f"> -->
+									<!-- <img src="images/picture_s.png" > -->
+									<!-- <img src="images/picture_t.png" class="picture_t"> -->
 								</div>
 							</div>
 							<div class="CentralContent_middle">
 								<div class="pictureshow">
-									<img src="images/picture_middle.png">
+									<a href=""><img src="images/picture_middle.png"></a>
 								</div>
 								<div class="mechanismInformation">
 									<span class="blueVertical"></span>
@@ -81,27 +83,35 @@
 									</span>
 									<ul>
 										<li>
-											2019年11月全国受理网络违法和不良信息举报970.8万件
-											<span>2020.01.01</span>
+											<a href="">
+												2019年11月全国受理网络违法和不良信息举报970.8万件
+												<span>2020.01.01</span>
+											</a>
 										</li>
 										<li>
-											国家互联网信息办公室发布《网络信息内容生态治理规定》
-											<span>2020.01.01</span>
+											<a href="">
+												国家互联网信息办公室发布《网络信息内容生态治理规定》
+												<span>2020.01.01</span>
+											</a>
 										</li>
 										<li>
-											国家网信办指导有关地方网信办约谈视觉中国网站ICphoto网站负责人即日起两家网站暂停服务全面整改
-											<span>2020.01.01</span>
+											<a href="">
+												国家网信办指导有关地方网信办约谈视觉中国网站ICphoto网站负责人即日起两家网站暂停服务全面整改
+												<span>2020.01.01</span>
+											</a>
 										</li>
 										<li>
-											国家互联网信息办公室发布《网络信息内容生态治理规定》
-											<span>2020.01.01</span>
+											<a href="">
+												国家互联网信息办公室发布《网络信息内容生态治理规定》
+												<span>2020.01.01</span>
+											</a>
 										</li>
 									</ul>
 								</div>
 							</div>
 							<div class="CentralContent_right">
 								<div class="pictureshow">
-									<img src="images/picture_right.png">
+									<a href=""><img src="images/picture_right.png"></a>
 								</div>
 								<div class="mechanismInformation">
 									<span class="blueVertical"></span>
@@ -110,20 +120,28 @@
 									</span>
 									<ul>
 										<li>
-											2019年11月全国受理网络违法和不良信息举报970.8万件
-											<span>2020.01.01</span>
+											<a href="">
+												2019年11月全国受理网络违法和不良信息举报970.8万件
+												<span>2020.01.01</span>
+											</a>
 										</li>
 										<li>
-											国家互联网信息办公室发布《网络信息内容生态治理规定》
-											<span>2020.01.01</span>
+											<a href="">
+												国家互联网信息办公室发布《网络信息内容生态治理规定》
+												<span>2020.01.01</span>
+											</a>
 										</li>
 										<li>
-											国家网信办指导有关地方网信办约谈视觉中国网站ICphoto网站负责人即日起两家网站暂停服务全面整改
-											<span>2020.01.01</span>
+											<a href="">
+												国家网信办指导有关地方网信办约谈视觉中国网站ICphoto网站负责人即日起两家网站暂停服务全面整改
+												<span>2020.01.01</span>
+											</a>
 										</li>
 										<li>
-											国家互联网信息办公室发布《网络信息内容生态治理规定》
-											<span>2020.01.01</span>
+											<a href="">
+												国家互联网信息办公室发布《网络信息内容生态治理规定》
+												<span>2020.01.01</span>
+											</a>
 										</li>
 									</ul>
 								</div>
@@ -142,58 +160,90 @@
 									</span>
 									<div class="lawsRegulations">
 										<!-- <div class="button" :class="{choose:index == 1}" @click="click(1)" > -->
-										<div class="button" :class="{choose:index == 1}" @mouseenter="click(1)">
-											法律
-										</div>
-										<div class="button" :class="{choose:index == 2}" @mouseenter="click(2)">
-											行政法规
-										</div>
-										<div class="button" :class="{choose:index == 3}" @mouseenter="click(3)">
-											部门规章
-										</div>
-										<div class="button" :class="{choose:index == 4}" @mouseenter="click(4)">
-											司法解释
-										</div>
-										<div class="button" :class="{choose:index == 5}" @mouseenter="click(5)">
-											规范性文件
-										</div>
-										<div class="button" :class="{choose:index == 6}" @mouseenter="click(6)">
-											政策文件
-										</div>
+										<a href="">
+											<div class="button" :class="{choose:index == 1}" @mouseenter="click(1)">
+												法律
+											</div>
+										</a>
+										<a href="">
+											<div class="button" :class="{choose:index == 2}" @mouseenter="click(2)">
+												行政法规
+											</div>	
+										</a>
+										<a href="">
+											<div class="button" :class="{choose:index == 3}" @mouseenter="click(3)">
+												部门规章
+											</div>
+										</a>
+										<a href="">
+											<div class="button" :class="{choose:index == 4}" @mouseenter="click(4)">
+												司法解释
+											</div>
+										</a>
+										<a href="">
+											<div class="button" :class="{choose:index == 5}" @mouseenter="click(5)">
+												规范性文件
+											</div>
+										</a>
+										<a href="">
+											<div class="button" :class="{choose:index == 6}" @mouseenter="click(6)">
+												政策文件
+											</div>
+										</a>
 									</div>
 									
-									<ul v-if="this.index == 1">
+									<ul v-if="this.index == 1" v-cloak>
 										<li>
-											2019年11月全国受理网络违法和不良信息举报970.8万件
-											<span>2020.01.01</span>
+											<a href="">
+												国家互联网信息办公室发布《网络信息内容生态治理规定》
+												<span>2020.01.01</span>
+											</a>
 										</li>
 										<li>
-											国家互联网信息办公室发布《网络信息内容生态治理规定》
-											<span>2020.01.01</span>
+											<a href="">
+												国家网信办指导有关地方网信办约谈视觉中国网站ICphoto网站负责人即日起两家网站暂停服务全面整改
+												<span>2020.01.01</span>
+											</a>
 										</li>
 										<li>
-											国家网信办指导有关地方网信办约谈视觉中国网站ICphoto网站负责人即日起两家网站暂停服务全面整改
-											<span>2020.01.01</span>
-										</li>
-									</ul>
-									<ul v-if="this.index == 2">
-										<li>
-											2019年11月全国受理网络违法和不良信息举报970.8万件
-											<span>2020.01.01</span>
-										</li>
-										<li>
-											国家网络信息内容生态治理规定》
-											<span>2020.01.01</span>
-										</li>
-										<li>
-											国家网信网站ICphoto网站负责人即日起两家网站暂停服务全面整改
-											<span>2020.01.01</span>
+											<a href="">
+												国家互联网信息办公室发布《网络信息内容生态治理规定》
+												<span>2020.01.01</span>
+											</a>
 										</li>
 									</ul>
-									<ul v-if="this.index == 3">
+									<ul v-if="this.index == 2" v-cloak>
 										<li>
-											2019年11月全国受理网络违法和不良信息举报970.8万件
-											<span>2020.01.01</span>
+											<a href="">
+												2019年11月全国受理网络违法和不良信息举报970.8万件
+												<span>2020.01.01</span>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												国家互联网信息办公室发布《网络信息内容生态治理规定》
+												<span>2020.01.01</span>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												国家互联网信息办公室发布《网络信息内容生态治理规定》
+												<span>2020.01.01</span>
+											</a>
+										</li>
+									</ul>
+									<ul v-if="this.index == 3" v-cloak>
+										<li>
+											<a href="">
+												2019年11月全国受理网络违法和不良信息举报970.8万件
+												<span>2020.01.01</span>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												国家互联网信息办公室发布《网络信息内容生态治理规定》
+												<span>2020.01.01</span>
+											</a>
 										</li>
 									</ul>
 								</div>
@@ -206,20 +256,28 @@
 									</span>
 									<ul>
 										<li>
-											2019年11月全国受理网络违法和不良信息举报970.8万件
-											<span>2020.01.01</span>
+											<a href="">
+												2019年11月全国受理网络违法和不良信息举报970.8万件
+												<span>2020.01.01</span>
+											</a>
 										</li>
 										<li>
-											国家互联网信息办公室发布《网络信息内容生态治理规定》
-											<span>2020.01.01</span>
+											<a href="">
+												国家互联网信息办公室发布《网络信息内容生态治理规定》
+												<span>2020.01.01</span>
+											</a>
 										</li>
 										<li>
-											国家网信办指导有关地方网信办约谈视觉中国网站ICphoto网站负责人即日起两家网站暂停服务全面整改
-											<span>2020.01.01</span>
+											<a href="">
+												国家网信办指导有关地方网信办约谈视觉中国网站ICphoto网站负责人即日起两家网站暂停服务全面整改
+												<span>2020.01.01</span>
+											</a>
 										</li>
 										<li>
-											国家互联网信息办公室发布《网络信息内容生态治理规定》
-											<span>2020.01.01</span>
+											<a href="">
+												国家互联网信息办公室发布《网络信息内容生态治理规定》
+												<span>2020.01.01</span>
+											</a>
 										</li>
 									</ul>
 								</div>
@@ -232,20 +290,28 @@
 									</span>
 									<ul>
 										<li>
-											2019年11月全国受理网络违法和不良信息举报970.8万件
-											<span>2020.01.01</span>
+											<a href="">
+												2019年11月全国受理网络违法和不良信息举报970.8万件
+												<span>2020.01.01</span>
+											</a>
 										</li>
 										<li>
-											国家互联网信息办公室发布《网络信息内容生态治理规定》
-											<span>2020.01.01</span>
+											<a href="">
+												国家互联网信息办公室发布《网络信息内容生态治理规定》
+												<span>2020.01.01</span>
+											</a>
 										</li>
 										<li>
-											国家网信办指导有关地方网信办约谈视觉中国网站ICphoto网站负责人即日起两家网站暂停服务全面整改
-											<span>2020.01.01</span>
+											<a href="">
+												国家网信办指导有关地方网信办约谈视觉中国网站ICphoto网站负责人即日起两家网站暂停服务全面整改
+												<span>2020.01.01</span>
+											</a>
 										</li>
 										<li>
-											国家互联网信息办公室发布《网络信息内容生态治理规定》
-											<span>2020.01.01</span>
+											<a href="">
+												国家互联网信息办公室发布《网络信息内容生态治理规定》
+												<span>2020.01.01</span>
+											</a>
 										</li>
 									</ul>
 								</div>
@@ -277,6 +343,8 @@
 				click(index){
 					this.index = index;
 				}
+			},
+			mounted() {
 			},
 		})
 	</script>

@@ -11,16 +11,20 @@
 .CentralContent .CentralContent_left{
 	width: 435px;
 	margin-right: 29px;
-	height: 470px;
+	/* height: 470px; */
+	/* height: 400px; */
 }
 .CentralContent .CentralContent_middle{
 	width: 375px;
 	margin-right: 26px;
-	height: 470px;
+	/* height: 400px; */
+
+	/* height: 470px; */
 }
 .CentralContent .CentralContent_right{
 	width: 375px;
-	height: 470px;
+	/* height: 400px; */
+	/* height: 470px; */
 }
 .CentralContent_left .pictureshow img{
 	width: 423px;
@@ -46,7 +50,7 @@
 	margin-left: 10px;
 }
 /* 文字变色 */
-.mechanismInformation ul li:hover{
+.mechanismInformation ul li:hover ,.mechanismInformation a:hover{
 	color: #3968CC;
 }
 /* flex布局最外层 */
@@ -167,6 +171,8 @@
 /* 下方表格内容 */
 .CentralContentBottom{
 	padding-top: 0;
+	/* 底部间距的修改位置 */
+	padding-bottom: 43px;
 }
 .CentralContentBottom .CentralContent_left .mechanismInformation .lawsRegulations{
 	margin-top: 18px;

@@ -2,6 +2,10 @@
 a{
 	color: #4E5569;
 }
+a:hover {
+	cursor:pointer;
+	color: #3968CC;
+}
 .center {
     width: 1300px;
 	/* width: 1300px; */
@@ -92,7 +96,8 @@ a{
 .center h1 a:hover,
 .center span a:hover,
 .news-list-info li a:hover {
-    color: #3968CC;
+	color: #3968CC;
+	cursor:pointer;
 }
 
 .news-list-info li em {
@@ -137,15 +142,13 @@ a{
 .content-info p em {
     margin-right: 10px;
 }
-
 .content-xx {
-    /* color: #434343; */
 	color: #5E5C5C;
     line-height: 42px;
-    padding: 20px;
+    padding: 20px 20px 58px;
 }
 .content-xx p{
-	font-size: 16px;
+	font-size: 18px;
 }
 .content-xx .bold {
     font-weight: bold
@@ -186,29 +189,14 @@ a{
 	border-radius: 5px;
 }
 /* 变化的颜色暂时还没有,留着等确认再修改 */
-.bm-btn a:hover {
+/* .bm-btn a:hover {
     background: #0090FF;
-}
+} */
 .bm-btn-checkbox{
 	margin-bottom: 20px;
 	text-align: center;
 }
-.bm-btn-checkbox .bm-btn-true{
-	background-image: url(../images/lty_report_check_true.png);
-	width: 14px;
-	height: 14px;
-	display: inline-block;
-	vertical-align:middle;
-	margin-right: 5px;
-}
-/* 空白的checkbox样式 */
-/* .bm-btn-checkbox .bm-btn-false{
-	background: url(../images/lty_report_check_false.png) no-repeat;
-	width: 14px;
-	height: 14px;
-	display: inline-block;
-	vertical-align:middle;
-} */
+
 /* 在线举报页面 */
 .online-reporting-one li,
 .online-reporting-two li{
@@ -298,13 +286,13 @@ a{
 	margin: 0 auto;
 	color: #5E5C5C;
 	font-size: 16px;
-	padding-bottom: 118px;
+	padding-bottom: 38px;
 }
 /* 举报查询结果样式  */
 .report_result{
 	text-align: center;
-	/* margin: 0 auto; */
 }
+/* 举报查询的图片不同地址 */
 .report_result .report_result_img{
 	background-image: url(../images/lty_on.png);
 	/* background-image: url(../images/lty_pass.png); */
@@ -326,6 +314,69 @@ a{
 	line-height: 26px;
 	/* margin-bottom: 118px; */
 }
+/* 举报指南样式开始 */
+.reportGuide-title p{
+	text-align: center;
+	margin: 0 auto;
+	width:1100px;
+}
+.reportGuide-title p.tit {
+	color: #414141;
+	line-height: 42px;
+	font-size: 26px;
+	font-family:PingFang SC;
+	font-weight:500;
+	margin-bottom: 5px;
+}
+.reportGuide-title p span{
+	color: #838383;
+	height:14px;
+	font-size:14px;
+	font-family:PingFang SC;
+	font-weight:400;
+	line-height:32px;
+}
+.reportGuide-title p.titContent{
+	padding-bottom: 5px;
+	border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+.reportGuide-content{
+	width: 1058px;
+	margin: 48px auto 0px;
+	color: #5E5C5C;
+}
+.reportGuide-content p{
+	line-height: 42px;
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 15px;
+}
+.reportGuide-content ul{
+	padding-left: 15px;
+}
+.reportGuide-content ul li ,.reportGuide-content ul, .reportGuide-content div {
+	font-size: 16px;
+	line-height: 42px;
+}
+.reportGuide-content div{
+	padding-left: 15px;
+	text-indent: 2em;
+}
+/* 举报指南样式结束 */
+/* 举报详情开始 */
+.center-left {
+	width: 60.38%;
+	background-color: blue;
+	float: left;
+}
+.center-right{
+	width: 39.62%;
+	float: left;
+
+	background-color: pink;
+}
+/* 举报详情结束 */
+
 /* 雪飞 */
 /* 头部通用 */
 .body{width: 1300px;margin: 0 auto;padding-bottom: 28px;}
@@ -340,13 +391,39 @@ a{
 .xxf_nav li a{color: #FFFFFF;line-height: 51px;font-size: 20px;width: 41px;margin: 0 45px;}
 .xxf_nav_one{margin-left: 40px;}
 .xxf_time{width: 194px;height: 51px; background-color: #0090FF;position: absolute;top: 0px;right: 0;line-height:51px ;color: #FFFFFF;}
-.xxf_timeall{display: flex;}
-.xxf_day{font-size: 30px;margin-left: 17px;}
-.xxf_year,.xxf_week{font-size: 16px;line-height: 25.5px;text-align: right;margin-left: 17px;}
+/* .xxf_timeall{display: flex;} */
+.xxf_day{font-size: 30px;margin-left: 17px; font-family:Source Han Sans CN;}
+/* .xxf_year,.xxf_week{font-size: 16px;line-height: 25.5px;text-align: right;margin-left: 17px;} */
 /* .xxf_year,.xxf_week{font-size: 16px;line-height: 25.5px;text-align: right;margin-left: 45px;} */
+.xxf_year,.xxf_week{font-size: 16px; margin-left: 17px; line-height: 16px; float: left; }
+.xxf_year{
+	margin-top: 6px;
+	margin-bottom: 5px;
+	margin-right: 16px;
+}
+.xxf_week{
+	margin-left: 53.5px;
+}
 /* 通用底部 */
 .copyright{background-color: #FFFFFF;}
-.footer{ margin-left: 720px;font-size: 15px; width: 600px; padding-top: 31px;padding-bottom: 29px;}
-.footer_img{float: left;padding: 2.5px 0px 1px 30px ;margin-right: -14px;}
-.footer_text{float: left;padding-left: 20px;padding-bottom: 12px; line-height: 22px;letter-spacing:1px}
+.footer{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 15px;
+	padding-top: 31px;
+	padding-bottom: 29px;
+	width:428px;
+}
+/* .footer{ margin-left: 720px;font-size: 15px; width: 600px; padding-top: 31px;padding-bottom: 29px;} */
+.footer_img{float: left;padding: 0px 5px 1px 5px;}
+.footer_text{
+	padding-right: 13px;
+	padding-bottom: 7px;
+	line-height: 22px;
+	letter-spacing:1px ;
+	margin: 0 auto;
+	float:left; 
+}
 /* .footer_text{padding-top: 38px;padding-bottom: 33px;padding-left: 20px;} */
+[v-cloak] { display: none;}
