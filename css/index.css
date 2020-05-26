@@ -1,211 +1,185 @@
 /* index页面 */
-.CentralContent{
-	width: 1300px;
-	padding-top: 34px;
-	/* background-color: pink; */
-	display: flex;
-	display: -webkit-flex;
-	justify-content:center;
-	margin: 0 auto;
+.CentralContent {
+  width: 1300px;
+  padding-top: 34px;
+  /* background-color: pink; */
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  margin: 0 auto;
 }
-.CentralContent .CentralContent_left{
-	width: 435px;
-	margin-right: 29px;
-	/* height: 470px; */
-	/* height: 400px; */
+.CentralContent .CentralContent_left {
+  width: 435px;
+  margin-right: 29px;
 }
-.CentralContent .CentralContent_middle{
-	width: 375px;
-	margin-right: 26px;
-	/* height: 400px; */
-
-	/* height: 470px; */
+.CentralContent .CentralContent_middle {
+  width: 375px;
+  margin-right: 26px;
 }
-.CentralContent .CentralContent_right{
-	width: 375px;
-	/* height: 400px; */
-	/* height: 470px; */
+.CentralContent .CentralContent_right {
+  width: 375px;
 }
-.CentralContent_left .pictureshow img{
-	width: 423px;
-	height: 111px;
+.CentralContent_left .pictureshow img {
+  width: 423px;
+  height: 111px;
 }
-.blueVertical{
-	width:5px;
-	height:18px;
-	background:rgba(0,144,255,1);
-	border-radius:5px;
-	margin: 0 auto;
-	display: inline-block;
-	vertical-align:-8%; 
+.blueVertical {
+  width: 5px;
+  height: 18px;
+  background: rgba(0, 144, 255, 1);
+  border-radius: 5px;
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: -8%;
 }
-.CentralContent_left .mechanismInformation{
-	margin-top: 38px;
-}
-.CentralContent_left .mechanismInformation span h3{
-	font-size:18px;
-	font-family:Microsoft YaHei;
-	font-weight:bold;
-	color:rgba(78,85,105,1);
-	margin-left: 10px;
+.CentralContent_left .mechanismInformation {
+  margin-top: 38px;
 }
 /* 文字变色 */
-.mechanismInformation ul li:hover ,.mechanismInformation a:hover{
-	color: #3968CC;
+.mechanismInformation ul li:hover,
+.mechanismInformation a:hover {
+  color: #3968cc;
 }
 /* flex布局最外层 */
-.flex{
-	display: flex;
-	display: -webkit-flex;
+.flex {
+  display: flex;
+  display: -webkit-flex;
 }
-.CentralContent_left .mechanismInformation img{
-	margin-top: 22px;
-	width: 407px;
-	height: 70px;
+.CentralContent_left .mechanismInformation img {
+  margin-top: 22px;
+  width: 407px;
+  height: 70px;
 }
-.CentralContent_left .mechanismInformation .picture_f{
-	margin-top: 31px;
+.CentralContent_left .mechanismInformation .picture_f {
+  margin-top: 31px;
 }
-.CentralContent_left .mechanismInformation .picture_t{
-	margin-top: 28px;
-	height: 86px;
+.CentralContent_left .mechanismInformation .picture_t {
+  margin-top: 28px;
+  height: 86px;
 }
-.CentralContent_left .mechanismInformation .centralButton{
-	width: 152px;
+.CentralContent_left .mechanismInformation .centralButton {
+  width: 152px;
 }
-.CentralContent_left .mechanismInformation .centralButton button{
-	width: 100%;
-	height: 47px;
-	background-color: #CB2936;
-	color: white;
-	padding:0;
-	border-width: 0px;
-	margin-bottom: 12px;
+.CentralContent_left .mechanismInformation .centralButton button {
+  width: 100%;
+  height: 47px;
+  background-color: #cb2936;
+  color: white;
+  padding: 0;
+  border-width: 0px;
+  margin-bottom: 12px;
 }
-.CentralContent_left .mechanismInformation .centralContent{
-	width: 255px;
-	margin-left: 21px;
-	height: 136px;
-	font-size:15px;
-	font-family:PingFang SC;
-	font-weight:400;
-	line-height:30px;
+.CentralContent_left .mechanismInformation .centralContent {
+  width: 255px;
+  margin-left: 21px;
+  height: 136px;
+  font-size: 15px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  line-height: 30px;
 }
-.CentralContent_left .mechanismInformation .centralExplain{
-	margin-top: 20px;
-	height: 140px;
+.CentralContent_left .mechanismInformation .centralExplain {
+  margin-top: 20px;
+  height: 140px;
 }
 /* 底部的图片 */
-.pageBottom{
-	width: 100%;
-	height: 96px;
-	margin-top: 50px;
-	/* padding-bottom: 44px; */
+.pageBottom {
+  width: 100%;
+  height: 96px;
+  margin-top: 50px;
+  /* padding-bottom: 44px; */
 }
-.pageBottom img{
-	margin: 0 auto;
-	display: block;
+.pageBottom img {
+  margin: 0 auto;
+  display: block;
 }
 /* 中间部分 */
-.CentralContent_middle .pictureshow img{
-	width: 375px;
-	height: 111px;
+.CentralContent_middle .pictureshow img {
+  width: 375px;
+  height: 111px;
 }
-.CentralContent_middle .mechanismInformation{
-	margin-top: 38px;
+.CentralContent_middle .mechanismInformation {
+  margin-top: 38px;
 }
-.CentralContent_middle .mechanismInformation span h3{
-	font-size:18px;
-	font-family:Microsoft YaHei;
-	font-weight:bold;
-	color:rgba(78,85,105,1);
-	margin-left: 10px;
+.mechanismInformation .blueVerticaltitle {
+  font-size: 18px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: rgba(78, 85, 105, 1);
+  margin-left: 10px;
 }
-.CentralContent_middle .mechanismInformation ul{
-	margin-top: 27px;
+.mechanismInformation .mechanismInformation-ul {
+  margin-top: 27px;
 }
-.CentralContent_middle .mechanismInformation ul li{
-	font-size:16px;
-	font-family:PingFang SC;
-	font-weight:400;
-	line-height: 23px;
-	margin-top: 23px;
+.CentralContent_middle .mechanismInformation-ul a,
+.CentralContent_right .mechanismInformation-ul a {
+  font-size: 16px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  line-height: 23px;
+  margin-top: 23px;
+  display: block;
 }
-.CentralContent_middle .mechanismInformation ul li span{
-	font-size: 15px;
-	color: #BABABA;
-	font-family: PingFangSC-Regular;
-	padding-left: 15px;
+.CentralContent_middle .mechanismInformation-ul a span,
+.CentralContent_right .mechanismInformation-ul a span {
+  font-size: 15px;
+  color: #bababa;
+  font-family: PingFangSC-Regular;
+  padding-left: 15px;
 }
 /* 右侧部分 */
-.CentralContent_right .pictureshow img{
-	width: 380px;
-	height: 111px;
+.CentralContent_right .pictureshow img {
+  width: 380px;
+  height: 111px;
 }
-.CentralContent_right .mechanismInformation{
-	margin-top: 38px;
-}
-.CentralContent_right .mechanismInformation span h3{
-	font-size:18px;
-	font-family:Microsoft YaHei;
-	font-weight:bold;
-	color:rgba(78,85,105,1);
-	margin-left: 10px;
-}
-.CentralContent_right .mechanismInformation ul{
-	margin-top: 27px;
-}
-.CentralContent_right .mechanismInformation ul li{
-	font-size:16px;
-	font-family:PingFang SC;
-	font-weight:400;
-	margin-top: 23px;
-	line-height: 23px;
-}
-.CentralContent_right .mechanismInformation ul li span{
-	font-size: 15px;
-	color: #BABABA;
-	font-family: PingFangSC-Regular;
-	padding-left: 15px;
+.CentralContent_right .mechanismInformation {
+  margin-top: 38px;
 }
 /* 下方表格内容 */
-.CentralContentBottom{
-	padding-top: 0;
-	/* 底部间距的修改位置 */
-	padding-bottom: 43px;
+.CentralContentBottom {
+  padding-top: 0;
+  /* 底部间距的修改位置 */
+  padding-bottom: 43px;
 }
-.CentralContentBottom .CentralContent_left .mechanismInformation .lawsRegulations{
-	margin-top: 18px;
+.CentralContentBottom
+  .CentralContent_left
+  .mechanismInformation
+  .lawsRegulations {
+  margin-top: 18px;
 }
-.CentralContentBottom .CentralContent_left .lawsRegulations .button{
-	width:auto;
-	display:inline-block !important; 
-	display:inline;
-	height: 28px;
-	padding:  0 30px;
-	margin: 0 0 7px 7px;
-	line-height: 28px;
-	text-align: center;
-	border: 1px solid #D2D2D2;
+.CentralContentBottom .CentralContent_left .lawsRegulations .button {
+  width: auto;
+  display: inline-block !important;
+  display: inline;
+  height: 28px;
+  padding: 0 30px;
+  margin: 0 7px 7px 0;
+  line-height: 28px;
+  text-align: center;
+  border: 1px solid #d2d2d2;
+}
+.CentralContentBottom .CentralContent_left .lawsRegulations .button:hover{
+  border: 1px solid rgba(0,144,255,1);
+}
+.tab-con-item {
+  margin-top: 10px;
+}
+.tab-con-item a {
+  font-size: 16px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  line-height: 23px;
+  margin-bottom: 23px;
+  display: block;
 }
 /* 选中样式 */
-.CentralContentBottom .CentralContent_left .lawsRegulations .choose{
-	color: #3968CC;
-	border-color: #0090FF;
+.CentralContentBottom .CentralContent_left .lawsRegulations .choose {
+  color: #3968cc;
+  border-color: #0090ff;
 }
-.CentralContent_left .mechanismInformation ul{
-	margin-top: 10px;
-}
-.CentralContent_left .mechanismInformation ul li{
-	font-size:16px;
-	font-family:PingFang SC;
-	font-weight:400;
-	line-height: 23px;
-	margin-bottom: 23px;
-}
-.CentralContent_left .mechanismInformation ul li span{
-	font-size: 15px;
-	color: #BABABA;
-	font-family: PingFangSC-Regular;
-	padding-left: 15px;
+.tab-con-item a span {
+  font-size: 15px;
+  color: #bababa;
+  font-family: PingFangSC-Regular;
+  padding-left: 15px;
 }

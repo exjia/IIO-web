@@ -1,351 +1,364 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>首页</title>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ant-design-vue@1.6.0/dist/antd.min.css">
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/lty_list.css" />
-		<link rel="stylesheet" type="text/css" href="css/index.css" />
-		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
-		<!--[if lte IE 8]><script>window.location.href='http://support.dmeng.net/upgrade-your-browser.html?referrer='+encodeURIComponent(window.location.href);</script><![endif]-->
-		<!--[if lte IE 9]> 
+
+<head>
+	<meta charset="utf-8">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/lty_list.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+	<script src="./js/jQuery.rTabs.js" type="text/javascript"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script> -->
+	<!--[if lte IE 8]><script>window.location.href='http://support.dmeng.net/upgrade-your-browser.html?referrer='+encodeURIComponent(window.location.href);</script><![endif]-->
+	<!--[if lte IE 9]> 
 			<link rel="stylesheet" type="text/css" href="css/style-ie.css">
 		<![endif]-->
-		<script src="http://momentjs.cn/downloads/moment.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/ant-design-vue@1.6.0/dist/antd.min.js"></script>
-		<!-- 国际化 -->
-		<link rel="stylesheet" type="application/javascript" href="https://cdn.jsdelivr.net/npm/ant-design-vue@1.6.0/dist/antd-with-locales.min.js">
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-	</head>
-	<body>
-		<div id="app">
-			<!-- logo，导航 -->
-			<div class="bj">
-				<div class="body">
-					<ul style="display: flex;">
-						<li><img src="images/logo.png" width="963" height="90" class="xxf_logo"></li>
-						<!-- <li><img src="images/xxf_logo.png" width="438.1" height="80" class="xxf_logo"></li> -->
-						<!-- <li><input type="text" class="xxf_input" placeholder="举报查询" /></li> -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<!-- swiper -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+	<script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+</head>
+
+<body>
+	<div id="app">
+		<!-- logo，导航 -->
+		<div class="bj">
+			<div class="body">
+				<img src="images/logo.png" width="963" height="90" class="xxf_logo">
+				<!-- <li><input type="text" class="xxf_input" placeholder="举报查询" /></li> -->
+				<div class="xxf_top">
+					<ul class="xxf_nav">
+						<li class="xxf_nav_one"><a href="">首页</a></li>
+						<li><a href="">举报指南</a></li>
+						<li><a href="">法律法规</a></li>
+						<li><a href="">安全警示</a></li>
+						<li><a href="">网络治理</a></li>
+						<li><a href="">机构简介</a></li>
 					</ul>
-					<div class="xxf_top">
-						<ul class="xxf_nav">
-							<li class="xxf_nav_one"><a href="">首页</a></li>
-							<li><a href="">举报指南</a></li>
-							<li><a href="">法律法规</a></li>
-							<li><a href="">安全警示</a></li>
-							<li><a href="">网络治理</a></li>
-							<li><a href="">机构简介</a></li>
+
+					<div class="xxf_time">
+						<ul class="xxf_timeall">
+							<div
+								style="height:0px; width:0px; border-top:solid 51px #204490; border-right:solid 30px transparent; float: left;">
+							</div>
+							<li class="xxf_year">2020年01月</li>
+							<li class="xxf_week">星期四</li>
+							<li class="xxf_day">2</li>
 						</ul>
-						
-						<div class="xxf_time">
-							<ul class="xxf_timeall">
-								<div style="height:0px; width:0px; border-top:solid 51px #204490; border-right:solid 30px transparent; float: left;" ></div> 
-								<li>
-									<ul>
-										<li class="xxf_year">2020年01月</li>
-										<li class="xxf_week">星期四</li>
-									</ul>
-								</li>
-								<li class="xxf_day">2</li>
-							</ul>
+					</div>
+				</div>
+
+				<!-- 中心内容区 -->
+				<div class="center">
+					<div class="CentralContent">
+						<div class="CentralContent_left">
+							<div class="pictureshow">
+								<a href=""> <img src="images/picture_left.png"> </a>
+							</div>
+							<div class="mechanismInformation">
+								<span class="blueVertical"></span>
+								<span class="blueVerticaltitle">
+									专题专栏
+								</span>
+								<a href=""><img src="images/picture_f.png" class="picture_f"></a>
+								<a href=""> <img src="images/picture_s.png"></a>
+								<a href=""> <img src="images/picture_t.png" class="picture_t"></a>
+							</div>
+						</div>
+						<div class="CentralContent_middle">
+							<div class="pictureshow">
+								<a href=""><img src="images/picture_middle.png"></a>
+							</div>
+							<div class="mechanismInformation">
+								<span class="blueVertical"></span>
+								<span class="blueVerticaltitle">
+									工作状态
+								</span>
+								<div class="mechanismInformation-ul">
+									<a href="">
+										2019年11月全国受理网络违法和不良信息举报970.8万件
+										<span>2020.01.01</span>
+									</a>
+									<a href="">
+										国家互联网信息办公室发布《网络信息内容生态治理规定》
+										<span>2020.01.01</span>
+									</a>
+
+									<a href="">
+										国家网信办指导有关地方网信办约谈视觉中国网站ICphoto网站负责人即日起两家网站暂停服务全面整改
+										<span>2020.01.01</span>
+									</a>
+									<a href="">
+										国家互联网信息办公室发布《网络信息内容生态治理规定》
+										<span>2020.01.01</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="CentralContent_right">
+							<div class="pictureshow">
+								<a href=""><img src="images/picture_right.png"></a>
+							</div>
+							<div class="mechanismInformation">
+								<span class="blueVertical"></span>
+								<span class="blueVerticaltitle">
+									曝光台
+								</span>
+								<div class="mechanismInformation-ul">
+									<a href="">
+										2019年11月全国受理网络违法和不良信息举报970.8万件
+										<span>2020.01.01</span>
+									</a>
+									<a href="">
+										国家互联网信息办公室发布《网络信息内容生态治理规定》
+										<span>2020.01.01</span>
+									</a>
+
+									<a href="">
+										国家网信办指导有关地方网信办约谈视觉中国网站ICphoto网站负责人即日起两家网站暂停服务全面整改
+										<span>2020.01.01</span>
+									</a>
+									<a href="">
+										国家互联网信息办公室发布《网络信息内容生态治理规定》
+										<span>2020.01.01</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="pageBottom">
+						<img src="./images/picture_bottom.png">
+					</div> -->
+					<!-- 轮播图 -->
+					<div class="swiper-container pageBottom">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="">
+									<img src="./images/picture_bottom.png">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="">
+									<img src="./images/picture_bottom.png">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="">
+									<img src="./images/picture_bottom.png">
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="">
+									<img src="./images/picture_bottom.png">
+								</a>
+							</div>
+						</div>
+						<!-- 分页器 -->
+						<div class="swiper-pagination"></div>
+					</div>
+					<!-- 下方三个内容框 -->
+					<div class="CentralContent  CentralContentBottom">
+						<div class="CentralContent_left">
+							<div class="mechanismInformation">
+								<span class="blueVertical"></span>
+								<span class="blueVerticaltitle">
+									法律法规
+								</span>
+								<!-- tab开始 -->
+								<div class="tab" id="tab4">
+									<div class=" j-tab-nav lawsRegulations">
+										<a href="javascript:void(0);" class="current button">
+											法律
+										</a>
+										<a href="javascript:void(0);" class="button">
+											行政法规
+										</a>
+										<a href="javascript:void(0);" class="button">
+											部门规章
+										</a>
+										<a href="javascript:void(0);" class="button">
+											司法解释
+										</a>
+										<a href="javascript:void(0);" class="button">
+											规范性文件
+										</a>
+										<a href="javascript:void(0);" class="button">
+											政策文件
+										</a>
+									</div>
+									<div class="tab-con">
+										<div class="j-tab-con">
+											<div class="tab-con-item" style="display:block;">
+												<a href="">
+													2019年11月全国受理网络违法和不良信息举报970.8万件
+													<span>2020.01.01</span>
+												</a>
+												<a href="">
+													国家互联网信息办公室发布《网络信息内容生态治理规定》
+													<span>2020.01.01</span>
+												</a>
+												<a href="">
+													国家互联网信息办公室发布《网络信息内容生态治理规定》
+													<span>2020.01.01</span>
+												</a>
+											</div>
+											<div class="tab-con-item">
+												<a href="">
+													2019年11月全国受理网络违法和不良信息举报970.8万件
+													<span>2020.01.01</span>
+												</a>
+												<a href="">
+													国家互联网信息办公室发布《网络信息内容生态治理规定》
+													<span>2020.01.01</span>
+												</a>
+												<a href="">
+													国家互联网信息办公室发布《网络信息内容生态治理规定》
+													<span>2020.01.01</span>
+												</a>
+											</div>
+											<div class="tab-con-item">
+												<a href="">
+													2019年11月全国受理网络违法和不良信息举报970.8万件
+													<span>2020.01.01</span>
+												</a>
+												<a href="">
+													国家互联网信息办公室发布《网络信息内容生态治理规定》
+													<span>2020.01.01</span>
+												</a>
+											</div>
+											<div class="tab-con-item">
+												444444
+											</div>
+											<div class="tab-con-item">
+												555555
+											</div>
+											<div class="tab-con-item">
+												666
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- tab结束 -->
+							</div>
+						</div>
+						<div class="CentralContent_middle">
+							<div class="mechanismInformation">
+								<span class="blueVertical"></span>
+								<span class="blueVerticaltitle">
+									安全警示
+								</span>
+								<div class="mechanismInformation-ul">
+									<a href="">
+										2019年11月全国受理网络违法和不良信息举报970.8万件
+										<span>2020.01.01</span>
+									</a>
+									<a href="">
+										国家互联网信息办公室发布《网络信息内容生态治理规定》
+										<span>2020.01.01</span>
+									</a>
+
+									<a href="">
+										国家网信办指导有关地方网信办约谈视觉中国网站ICphoto网站负责人即日起两家网站暂停服务全面整改
+										<span>2020.01.01</span>
+									</a>
+									<a href="">
+										国家互联网信息办公室发布《网络信息内容生态治理规定》
+										<span>2020.01.01</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="CentralContent_right">
+							<div class="mechanismInformation">
+								<span class="blueVertical"></span>
+								<span class="blueVerticaltitle">
+									网络治理
+								</span>
+								<div class="mechanismInformation-ul">
+									<a href="">
+										2019年11月全国受理网络违法和不良信息举报970.8万件
+										<span>2020.01.01</span>
+									</a>
+									<a href="">
+										国家互联网信息办公室发布《网络信息内容生态治理规定》
+										<span>2020.01.01</span>
+									</a>
+
+									<a href="">
+										国家网信办指导有关地方网信办约谈视觉中国网站ICphoto网站负责人即日起两家网站暂停服务全面整改
+										<span>2020.01.01</span>
+									</a>
+									<a href="">
+										国家互联网信息办公室发布《网络信息内容生态治理规定》
+										<span>2020.01.01</span>
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
 
-					<!-- 中心内容区 -->
-					<div class="center">
-						<div class="CentralContent">
-							<div class="CentralContent_left">
-								<div class="pictureshow">
-									<a href="">	<img src="images/picture_left.png"> </a>
-								</div>
-								<div class="mechanismInformation">
-									<span class="blueVertical"></span>
-									<span>
-										<h3>专题专栏</h3>
-									</span>
-									<a href=""><img src="images/picture_f.png" class="picture_f"></a>
-									<a href=""> <img src="images/picture_s.png" ></a>
-									<a href=""> <img src="images/picture_t.png" class="picture_t"></a>
-									<!-- <img src="images/picture_f.png" class="picture_f"> -->
-									<!-- <img src="images/picture_s.png" > -->
-									<!-- <img src="images/picture_t.png" class="picture_t"> -->
-								</div>
-							</div>
-							<div class="CentralContent_middle">
-								<div class="pictureshow">
-									<a href=""><img src="images/picture_middle.png"></a>
-								</div>
-								<div class="mechanismInformation">
-									<span class="blueVertical"></span>
-									<span>
-										<h3>工作状态</h3>
-									</span>
-									<ul>
-										<li>
-											<a href="">
-												2019年11月全国受理网络违法和不良信息举报970.8万件
-												<span>2020.01.01</span>
-											</a>
-										</li>
-										<li>
-											<a href="">
-												国家互联网信息办公室发布《网络信息内容生态治理规定》
-												<span>2020.01.01</span>
-											</a>
-										</li>
-										<li>
-											<a href="">
-												国家网信办指导有关地方网信办约谈视觉中国网站ICphoto网站负责人即日起两家网站暂停服务全面整改
-												<span>2020.01.01</span>
-											</a>
-										</li>
-										<li>
-											<a href="">
-												国家互联网信息办公室发布《网络信息内容生态治理规定》
-												<span>2020.01.01</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="CentralContent_right">
-								<div class="pictureshow">
-									<a href=""><img src="images/picture_right.png"></a>
-								</div>
-								<div class="mechanismInformation">
-									<span class="blueVertical"></span>
-									<span>
-										<h3>曝光台</h3>
-									</span>
-									<ul>
-										<li>
-											<a href="">
-												2019年11月全国受理网络违法和不良信息举报970.8万件
-												<span>2020.01.01</span>
-											</a>
-										</li>
-										<li>
-											<a href="">
-												国家互联网信息办公室发布《网络信息内容生态治理规定》
-												<span>2020.01.01</span>
-											</a>
-										</li>
-										<li>
-											<a href="">
-												国家网信办指导有关地方网信办约谈视觉中国网站ICphoto网站负责人即日起两家网站暂停服务全面整改
-												<span>2020.01.01</span>
-											</a>
-										</li>
-										<li>
-											<a href="">
-												国家互联网信息办公室发布《网络信息内容生态治理规定》
-												<span>2020.01.01</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="pageBottom">
-							<img src="./images/picture_bottom.png">
-						</div>
-						<!-- 下方三个内容框 -->
-						<div class="CentralContent  CentralContentBottom">
-							<div class="CentralContent_left">
-								<div class="mechanismInformation">
-									<span class="blueVertical"></span>
-									<span>
-										<h3>法律法规</h3>
-									</span>
-									<div class="lawsRegulations">
-										<!-- <div class="button" :class="{choose:index == 1}" @click="click(1)" > -->
-										<a href="">
-											<div class="button" :class="{choose:index == 1}" @mouseenter="click(1)">
-												法律
-											</div>
-										</a>
-										<a href="">
-											<div class="button" :class="{choose:index == 2}" @mouseenter="click(2)">
-												行政法规
-											</div>	
-										</a>
-										<a href="">
-											<div class="button" :class="{choose:index == 3}" @mouseenter="click(3)">
-												部门规章
-											</div>
-										</a>
-										<a href="">
-											<div class="button" :class="{choose:index == 4}" @mouseenter="click(4)">
-												司法解释
-											</div>
-										</a>
-										<a href="">
-											<div class="button" :class="{choose:index == 5}" @mouseenter="click(5)">
-												规范性文件
-											</div>
-										</a>
-										<a href="">
-											<div class="button" :class="{choose:index == 6}" @mouseenter="click(6)">
-												政策文件
-											</div>
-										</a>
-									</div>
-									
-									<ul v-if="this.index == 1" v-cloak>
-										<li>
-											<a href="">
-												国家互联网信息办公室发布《网络信息内容生态治理规定》
-												<span>2020.01.01</span>
-											</a>
-										</li>
-										<li>
-											<a href="">
-												国家网信办指导有关地方网信办约谈视觉中国网站ICphoto网站负责人即日起两家网站暂停服务全面整改
-												<span>2020.01.01</span>
-											</a>
-										</li>
-										<li>
-											<a href="">
-												国家互联网信息办公室发布《网络信息内容生态治理规定》
-												<span>2020.01.01</span>
-											</a>
-										</li>
-									</ul>
-									<ul v-if="this.index == 2" v-cloak>
-										<li>
-											<a href="">
-												2019年11月全国受理网络违法和不良信息举报970.8万件
-												<span>2020.01.01</span>
-											</a>
-										</li>
-										<li>
-											<a href="">
-												国家互联网信息办公室发布《网络信息内容生态治理规定》
-												<span>2020.01.01</span>
-											</a>
-										</li>
-										<li>
-											<a href="">
-												国家互联网信息办公室发布《网络信息内容生态治理规定》
-												<span>2020.01.01</span>
-											</a>
-										</li>
-									</ul>
-									<ul v-if="this.index == 3" v-cloak>
-										<li>
-											<a href="">
-												2019年11月全国受理网络违法和不良信息举报970.8万件
-												<span>2020.01.01</span>
-											</a>
-										</li>
-										<li>
-											<a href="">
-												国家互联网信息办公室发布《网络信息内容生态治理规定》
-												<span>2020.01.01</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="CentralContent_middle">
-								<div class="mechanismInformation">
-									<span class="blueVertical"></span>
-									<span>
-										<h3>安全警示</h3>
-									</span>
-									<ul>
-										<li>
-											<a href="">
-												2019年11月全国受理网络违法和不良信息举报970.8万件
-												<span>2020.01.01</span>
-											</a>
-										</li>
-										<li>
-											<a href="">
-												国家互联网信息办公室发布《网络信息内容生态治理规定》
-												<span>2020.01.01</span>
-											</a>
-										</li>
-										<li>
-											<a href="">
-												国家网信办指导有关地方网信办约谈视觉中国网站ICphoto网站负责人即日起两家网站暂停服务全面整改
-												<span>2020.01.01</span>
-											</a>
-										</li>
-										<li>
-											<a href="">
-												国家互联网信息办公室发布《网络信息内容生态治理规定》
-												<span>2020.01.01</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="CentralContent_right">
-								<div class="mechanismInformation">
-									<span class="blueVertical"></span>
-									<span>
-										<h3>网络治理</h3>
-									</span>
-									<ul>
-										<li>
-											<a href="">
-												2019年11月全国受理网络违法和不良信息举报970.8万件
-												<span>2020.01.01</span>
-											</a>
-										</li>
-										<li>
-											<a href="">
-												国家互联网信息办公室发布《网络信息内容生态治理规定》
-												<span>2020.01.01</span>
-											</a>
-										</li>
-										<li>
-											<a href="">
-												国家网信办指导有关地方网信办约谈视觉中国网站ICphoto网站负责人即日起两家网站暂停服务全面整改
-												<span>2020.01.01</span>
-											</a>
-										</li>
-										<li>
-											<a href="">
-												国家互联网信息办公室发布《网络信息内容生态治理规定》
-												<span>2020.01.01</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						
-					</div>
 				</div>
 			</div>
-			<!-- 版权 -->
-			<div class="copyright">
-				<ul class="footer">
-					<li class="footer_text">Copyright@版权所有</li>
-					<li class="footer_text">长春市互联网违法和不良信息举报中心</li>
-					<li class="footer_text">吉ICP备05000000号</li>
-					<li class="footer_img"><img src="images/Bz.png" width="14" height="16"></li>
-					<li class="footer_text">吉公网安备 22000002000002号</li>
-				</ul>
-			</div>
 		</div>
-	</body>
-	<script type="text/javascript">
-		var vm = new Vue({
-			el:'#app',
-			data:{
-				index:1,
+		<!-- 版权 -->
+		<div class="copyright">
+			<p class="copyright-p">
+				<span>Copyright@版权所有</span>
+				<span>长春市互联网违法和不良信息举报中心</span>
+			</p>
+			<p class="copyright-p">
+				<span>吉ICP备05000000号</span>
+				<span><img src="images/Bz.png" width="14" height="16" class="footer_img"></span>
+				<span>吉公网安备 22000002000002号</span>
+			</p>
+		</div>
+	</div>
+	<script>
+		var mySwiper = new Swiper('.swiper-container', {
+			//   direction: 'vertical', // 垂直切换选项
+			loop: true, // 循环模式选项
+			// 如果需要分页器
+			pagination: {
+				el: '.swiper-pagination',
 			},
-			methods:{
-				click(index){
-					this.index = index;
-				}
-			},
-			mounted() {
-			},
-		})
+		})        
 	</script>
+</body>
+<style>
+	.tab-con-item {
+		display: none;
+	}
+
+	.swiper-pagination-bullets {
+		text-align: right;
+		width: 1250px !important;
+	}
+
+	/* :root {
+    --swiper-theme-color: #FFCC00 ;
+	} */
+	.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+		margin: 0 2.5px;
+	}
+
+	.swiper-pagination-bullet {
+		background: #fff;
+		opacity: 0.9;
+	}
+
+	.swiper-pagination-bullet-active {
+		background: #FFCC00 !important;
+	}
+</style>
+<script type="text/javascript">
+	$(function () {
+		$("#tab4").rTabs({
+			bind: 'hover',
+			animation: 'fadein'
+		});
+	})
+
+</script>
+
 </html>
