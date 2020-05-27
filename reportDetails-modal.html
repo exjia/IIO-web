@@ -307,7 +307,69 @@
 </div>
 </body>
 <script>
-	
+	$(function () {
+		$('input, textarea').placeholder();
+		$('.message .loginadd').click(function () {
+			$('.register-form,.login-form').animate(
+				{
+					height: 'toggle',
+					opacity: 'toggle',
+				},
+				'slow'
+			);
+			document.getElementById('title-retrieve').innerHTML = '登录';
+		});
+		$('.message .nowadd').click(function () {
+			$('.register-form,.login-form').animate(
+				{
+					height: 'toggle',
+					opacity: 'toggle',
+				},
+				'slow'
+			);
+			document.getElementById('title-retrieve').innerHTML = '注册';
+		});
+		$('.message .findadd').click(function () {
+			$('.login-form,.retrieve-password').animate(
+				{
+					height: 'toggle',
+					opacity: 'toggle',
+				},
+				'slow'
+			);
+			document.getElementById('title-retrieve').innerHTML = '密码找回';
+		});
+
+		var $citypicker3 = $('#city-picker3');
+
+		$('#reset').click(function () {
+			$citypicker3.citypicker('reset');
+		});
+
+		$('#destroy').click(function () {
+			$citypicker3.citypicker('destroy');
+		});
+		$('input[required]').before('<span class="required_style">*</span>');
+	});
+
+	function formdis(s) {
+		var arr = ['登录', '注册', '密码找回', '找回成功', '修改注册信息'];
+		//  Array.from($('#login_form form')).forEach((item, index) => {
+		// 		item.style.display = 'none';
+		// 		if (index == s - 1) {
+		// 			item.style.display = 'block';
+		// 		}
+		// 	});
+
+		for (var i = 0; i < $('#login_form form').length; i++) {
+			$('#login_form form')[i].style.display = 'none';
+			if (i == s - 1) {
+				$('#login_form form')[i].style.display = 'block';
+			}
+		}
+
+		document.getElementById('title-retrieve').innerHTML = arr[s - 1];
+	};
 </script>
 
 </html>
