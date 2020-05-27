@@ -116,7 +116,7 @@ blockquote:after {
     content: ””;
 }
 
-input {
+input,button{
     outline: none;
 }
 

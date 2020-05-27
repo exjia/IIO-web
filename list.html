@@ -1,30 +1,55 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
+		<meta charset="utf-8" />
 		<title>列表</title>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ant-design-vue@1.6.0/dist/antd.min.css">
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/lty_list.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
-		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
-		<!--[if lte IE 8]><script>window.location.href='http://support.dmeng.net/upgrade-your-browser.html?referrer='+encodeURIComponent(window.location.href);</script><![endif]-->
-		<!--[if lte IE 9]> 
-			<link rel="stylesheet" type="text/css" href="css/style-ie.css">
-		<![endif]-->
-		<script src="http://momentjs.cn/downloads/moment.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/ant-design-vue@1.6.0/dist/antd.min.js"></script>
-		<!-- 国际化 -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ant-design-vue@1.6.0/dist/antd-with-locales.min.js">
+		<link rel="stylesheet" type="text/css" href="css/city-picker.css" />
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<!--[if lte IE 8]>
+			<script>
+				window.location.href =
+					'http://support.dmeng.net/upgrade-your-browser.html?referrer=' +
+					encodeURIComponent(window.location.href);
+			</script>
+		<![endif]-->
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" type="text/css" href="css/style-ie.css" />
+		<![endif]-->
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link
+			href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css"
+		/>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+		<script src="js/city-picker.data.js"></script>
+		<script src="js/city-picker.js"></script>
 	</head>
 	<body>
 		<div id="app">
 			<div class="bj">
 				<div class="body">
 					<ul style="display: flex;">
-						<li><img src="images/logo.png" width="963" height="90" class="xxf_logo"></li>
+						<li>
+							<img
+								src="images/logo.png"
+								width="963"
+								height="90"
+								class="xxf_logo"
+								data-toggle="modal"
+								data-target="#myModal"
+								onClick="formdis(2)"
+							/>
+						</li>
 					</ul>
 					<div class="xxf_top">
 						<ul class="xxf_nav">
@@ -38,7 +63,14 @@
 
 						<div class="xxf_time">
 							<ul class="xxf_timeall">
-								<div style="height:0px; width:0px; border-top:solid 51px #204490; border-right:solid 30px transparent;"></div>
+								<div
+									style="
+										height: 0px;
+										width: 0px;
+										border-top: solid 51px #204490;
+										border-right: solid 30px transparent;
+									"
+								></div>
 								<li>
 									<ul>
 										<li class="xxf_year">2020年01月</li>
@@ -53,61 +85,117 @@
 					<div class="center">
 						<div>
 							<div class="center-title">
-								<h1><a href="javascrip:void(0)">法律法规</a></h1>/
-								<span><a href="javascrip:void(0)">法律</a></span>
+								<h1>
+									<a href="javascrip:void(0)">法律法规</a>
+								</h1>
+								/
+								<span
+									><a href="javascrip:void(0)">法律</a></span
+								>
 							</div>
 							<ul class="news-list news-list-info">
 								<li>
-									<span class="point">.</span><a href="javascrip:void(0)">中华人民共和国网络安全法</a><em>2020.01.01</em>
+									<span class="point">.</span
+									><a href="javascrip:void(0)"
+										>中华人民共和国网络安全法</a
+									><em>2020.01.01</em>
 								</li>
 								<li>
-									<span class="point">.</span><a href="javascrip:void(0)">中华人民共和国电子签名法</a><em>2020.01.01</em>
+									<span class="point">.</span
+									><a href="javascrip:void(0)"
+										>中华人民共和国电子签名法</a
+									><em>2020.01.01</em>
 								</li>
 								<li>
-									<span class="point">.</span><a href="javascrip:void(0)">中华人民共和国电子商务法</a><em>2020.01.01</em>
+									<span class="point">.</span
+									><a href="javascrip:void(0)"
+										>中华人民共和国电子商务法</a
+									><em>2020.01.01</em>
 								</li>
 								<li>
-									<span class="point">.</span><a href="javascrip:void(0)">全国人民代表大会常务委员会关于加强网络信息保护的决定</a><em>2020.01.01</em>
+									<span class="point">.</span
+									><a href="javascrip:void(0)"
+										>全国人民代表大会常务委员会关于加强网络信息保护的决定</a
+									><em>2020.01.01</em>
 								</li>
 							</ul>
 						</div>
 						<div>
-							<span class="news"><a href="javascrip:void(0)">行政法规</a></span>
+							<span class="news"
+								><a href="javascrip:void(0)">行政法规</a></span
+							>
 							<ul class="news-list news-list-info">
 								<li>
-									<span class="point">.</span><a href="javascrip:void(0)">国务院关于授权国家互联网信息办公室负责互联网信息内容管理工作的通知 </a><em>2020.01.01</em>
+									<span class="point">.</span
+									><a href="javascrip:void(0)"
+										>国务院关于授权国家互联网信息办公室负责互联网信息内容管理工作的通知 </a
+									><em>2020.01.01</em>
 								</li>
 								<li>
-									<span class="point">.</span><a href="javascrip:void(0)">信息网络传播权保护条例 </a><em>2020.01.01</em>
+									<span class="point">.</span
+									><a href="javascrip:void(0)"
+										>信息网络传播权保护条例 </a
+									><em>2020.01.01</em>
 								</li>
 								<li>
-									<span class="point">.</span><a href="javascrip:void(0)">互联网上网服务营业场所管理条例 </a><em>2020.01.01</em>
+									<span class="point">.</span
+									><a href="javascrip:void(0)"
+										>互联网上网服务营业场所管理条例 </a
+									><em>2020.01.01</em>
 								</li>
 								<li>
-									<span class="point">.</span><a href="javascrip:void(0)">计算机软件保护条例</a><em>2020.01.01</em>
+									<span class="point">.</span
+									><a href="javascrip:void(0)"
+										>计算机软件保护条例</a
+									><em>2020.01.01</em>
 								</li>
 							</ul>
 						</div>
 						<div>
-							<span class="news"><a href="javascrip:void(0)">司法解释</a></span>
+							<span class="news"
+								><a href="javascrip:void(0)">司法解释</a></span
+							>
 							<ul class="news-list-last news-list-info">
 								<li>
-									<span class="point">.</span><a href="javascrip:void(0)">最高人民法院关于审理利用信息网络侵害人身权益民事纠纷案件适用法律若干问题的规定 </a><em>2020.01.01</em>
+									<span class="point">.</span
+									><a href="javascrip:void(0)"
+										>最高人民法院关于审理利用信息网络侵害人身权益民事纠纷案件适用法律若干问题的规定 </a
+									><em>2020.01.01</em>
 								</li>
 								<li>
-									<span class="point">.</span><a href="javascrip:void(0)">最高人民法院、最高人民检察院关于办理利用信息网络实施诽谤等刑事案件适用法律若干问题的解释 </a><em>2020.01.01</em>
+									<span class="point">.</span
+									><a href="javascrip:void(0)"
+										>最高人民法院、最高人民检察院关于办理利用信息网络实施诽谤等刑事案件适用法律若干问题的解释 </a
+									><em>2020.01.01</em>
 								</li>
 								<li>
-									<span class="point">.</span><a href="javascrip:void(0)">最高人民法院关于审理侵害信息网络传播权民事纠纷案件适用法律若干问题的规定 </a><em>2020.01.01</em>
+									<span class="point">.</span
+									><a href="javascrip:void(0)"
+										>最高人民法院关于审理侵害信息网络传播权民事纠纷案件适用法律若干问题的规定 </a
+									><em>2020.01.01</em>
 								</li>
 								<li>
-									<span class="point">.</span><a href="javascrip:void(0)">最高人民法院、最高人民检察院关于办理利用互联网、移动通讯终端、声讯台制作、复制、出版、贩卖、传播淫秽电子信息刑事案件具体应用法律若干问题的解释</a><em>2020.01.01</em>
+									<span class="point">.</span
+									><a href="javascrip:void(0)"
+										>最高人民法院、最高人民检察院关于办理利用互联网、移动通讯终端、声讯台制作、复制、出版、贩卖、传播淫秽电子信息刑事案件具体应用法律若干问题的解释</a
+									><em>2020.01.01</em>
 								</li>
 							</ul>
 						</div>
 						<!-- 跳转页面 -->
 						<div class="pagenum">
-							<a-pagination show-quick-jumper :default-current="1" :total="50" @change="onChange" />
+							<!-- <a-pagination
+								show-quick-jumper
+								:default-current="1"
+								:total="50"
+								@change="onChange"
+							/> -->
+							<el-pagination
+								background
+								layout="prev, pager, next"
+								:total="1000"
+							>
+							</el-pagination>
 						</div>
 					</div>
 				</div>
@@ -116,26 +204,241 @@
 			<div class="copyright">
 				<ul class="footer">
 					<li class="footer_text">Copyright@版权所有</li>
-					<li class="footer_text">长春市互联网违法和不良信息举报中心</li>
+					<li class="footer_text">
+						长春市互联网违法和不良信息举报中心
+					</li>
 					<li class="footer_text">吉ICP备05000000号</li>
-					<li class="footer_img"><img src="images/Bz.png" width="14" height="16"></li>
+					<li class="footer_img">
+						<img src="images/Bz.png" width="14" height="16" />
+					</li>
 					<li class="footer_text">吉公网安备 22000002000002号</li>
 				</ul>
 			</div>
 		</div>
+		<div
+			class="modal fade"
+			id="myModal"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="myModalLabel"
+		>
+			<div class="modal-dialog" style="margin-top: 100px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+						>
+							<span aria-hidden="true">&times;</span
+							><span class="sr-only">关闭</span>
+						</button>
+						<h4 class="modal-title" id="title-retrieve">登录</h4>
+					</div>
+					<div class="modal-body">
+						<div id="login_form" class="form">
+							<form class="login-form" style="display: none;">
+								<input
+									type="text"
+									class="form-control"
+									placeholder="用户名/手机号"
+								/>
+								<input
+									type="password"
+									class="form-control"
+									placeholder="密码"
+								/>
+								<input
+									type="password"
+									class="form-control"
+									placeholder="验证码"
+								/>
+								<button style="margin-top: 10px;" id="login">
+									登　录
+								</button>
+								<p class="message">
+									还没有账号?
+									<a href="#" class="nowadd">立刻创建</a
+									>&nbsp;&nbsp;忘记密码?
+									<a href="#" class="findadd">立刻找回</a>
+								</p>
+							</form>
+							<form class="register-form" style="display: none;">
+								<input
+									type="text"
+									class="form-control"
+									placeholder="用户名"
+								/>
+								<input
+									type="password"
+									class="form-control"
+									placeholder="设置密码"
+								/>
+								<input
+									type="password"
+									class="form-control"
+									placeholder="确认密码"
+								/>
+								<input
+								type="text"
+								class="form-control"
+								placeholder="请输入您的真实姓名"
+							/>
+							
+						<input
+							type="text"
+							class="form-control"
+							placeholder="请输入您的手机号码"
+						/>
+						<input
+							type="email"
+							class="form-control"
+							placeholder="请输入您的电子邮箱"
+						/>
+						<!-- <select
+									class="selectpicker select-style"
+								>
+									<option>地域</option>
+									<option>吉林省</option>
+									<option>安全问题2</option>
+								</select> -->
+								<!-- <form class="form-inline">
+								<div id="distpicker">
+									<div class="form-group">
+										<div style="position: relative;">
+								<input id="city-picker3" class="form-control select-style" readonly type="text" value="吉林省/长春市/朝阳市" data-toggle="city-picker" />
+								</div>
+							</div>
+					
+						</div>
+					</form> -->
+					<div style="position: relative;width:300px">
+						<input id="city-picker3" class="form-control" readonly type="text" value="吉林省/长春市/朝阳区" data-toggle="city-picker">
+					</div>
+								<input
+									type="text"
+									class="form-control"
+									placeholder="地址"
+								/>
+								<input
+									type="text"
+									class="form-control"
+									placeholder="验证码"
+								/>
+								<button style="margin: 10px 0 15px;">
+									确认注册
+								</button>
+								<p class="message">
+									已经有了一个账号?
+									<a href="#" class="loginadd">立刻登录</a>
+								</p>
+							</form>
+							<form
+								class="retrieve-password"
+								style="display: none;"
+							>
+								<input
+									type="text"
+									class="form-control"
+									placeholder="请输入身份证号"
+								/>
+								<button style="margin-top: 10px;">
+									确认找回
+								</button>
+								<div
+									style="
+										color: red;
+										font-size: 13px;
+										text-align: left;
+										margin-top: 10px;
+									"
+								>
+									* 请填写注册时所用的身份证号！
+								</div>
+							</form>
+							<form class="safety-problem" style="display: none;">
+								<select
+									name="anquanwenti"
+									class="form-control m-b lhj-indent"
+									style="
+										border-radius: 7px;
+										margin-bottom: 15px;
+										font-size: 14px;
+									"
+								>
+									<option value="">请选择安全问题</option>
+									<option value="安全问题1">安全问题1</option>
+									<option value="安全问题2">安全问题2</option>
+								</select>
+								<input type="text" placeholder="安全问题答案" />
+								<button style="margin-top: 10px;">
+									确认修改
+								</button>
+								<div
+									style="
+										color: red;
+										font-size: 13px;
+										text-align: left;
+										margin-top: 10px;
+									"
+								>
+									* 请填写安全问题用于找回密码！
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 	<script>
-		  var vm = new Vue({
-			el: '#app',
-			// data: {
-			// 	locale: zhCN,
-			//     // message: 'Hello Vue.js'
-			// },
-			data() {
-				return {
-					locale: zhCN,
-				};
-			},
+		$(function () {
+			$('.message .loginadd').click(function () {
+				$('.register-form,.login-form').animate(
+					{
+						height: 'toggle',
+						opacity: 'toggle',
+					},'slow');
+				document.getElementById('title-retrieve').innerHTML = '登录';
+			});
+			$('.message .nowadd').click(function () {
+				$('.register-form,.login-form').animate(
+					{
+						height: 'toggle',
+						opacity: 'toggle',
+					},'slow');
+				document.getElementById('title-retrieve').innerHTML = '注册';
+			});
+			$('.message .findadd').click(function () {
+				$('.login-form,.retrieve-password').animate(
+					{
+						height: 'toggle',
+						opacity: 'toggle',
+					},'slow');
+				document.getElementById('title-retrieve').innerHTML =
+					'密码找回';
+			});
+
+			var $citypicker3 = $('#city-picker3');
+
+$('#reset').click(function () {
+		$citypicker3.citypicker('reset');
+});
+
+$('#destroy').click(function () {
+		$citypicker3.citypicker('destroy');
+});
 		});
+
+		function formdis(s) {
+			let arr = ['登录', '注册', '密码找回', '安全问题'];
+			Array.from($('#login_form form')).forEach((item, index) => {
+				item.style.display = 'none';
+				if (index == s - 1) {
+					item.style.display = 'block';
+				}
+			});
+			document.getElementById('title-retrieve').innerHTML = arr[s - 1];
+		}
 	</script>
 </html>
