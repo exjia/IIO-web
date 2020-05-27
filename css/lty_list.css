@@ -522,6 +522,7 @@ a {
 	padding: 10px 15px;
 	box-sizing: border-box;
 	font-size: 14px;
+	text-indent: 5px;
 }
 
 .form button {
@@ -559,6 +560,75 @@ a {
 	text-decoration: none;
 }
 
-.form input {
-	padding: 20px 15px;
+
+.modal-open {
+	padding-right: 0 !important;
+}
+
+.modal {
+	top: 30px
+}
+
+.required_style {
+	color: red;
+	position: absolute;
+	left: 42px;
+	margin-top: 13px;
+	font-size: 15px;
+}
+
+.vetify_style {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.vetify-group {
+	position: relative;
+}
+
+.city_picker .required_style,
+.vetify-group .required_style {
+	left: 11px;
+	z-index: 99;
+}
+
+.select-style {
+	display: block !important;
+	margin: 0 0 15px;
+}
+
+.select-style button {
+	width: 334px !important;
+	background: #fff;
+	color: #999 !important;
+	margin: 0;
+	border: #d0d2d4 1px solid;
+	padding-left: 22px;
+	font-size: 14px;
+}
+
+.select-style button:hover,
+.select-style button:active,
+.select-style button:focus {
+	background: #fff;
+}
+.form-text-lhj{
+	display: block;
+    text-align: left;
+    margin-left: 8px;
+    margin-top: -8px;
+    margin-bottom: 12px;
+    color: #8D9DAC;
+}
+.modal-title{
+	margin-left: 10px;
+}
+.success-txt,.success-change-txt{
+	width:70% ;
+	margin: 22px auto 31px;
+}
+.success-change-txt{
+	font-size: 18px;
+	margin-top: 10px;
 }

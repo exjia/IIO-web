@@ -2,12 +2,21 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<title>列表</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link
+			href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css"
+		/>
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/lty_list.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel="stylesheet" type="text/css" href="css/city-picker.css" />
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<!--[if lte IE 8]>
 			<script>
 				window.location.href =
@@ -19,18 +28,9 @@
 			<link rel="stylesheet" type="text/css" href="css/style-ie.css" />
 		<![endif]-->
 		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<link
-			href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
-			rel="stylesheet"
-		/>
 		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<!-- Latest compiled and minified CSS -->
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css"
-		/>
-		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+		<script type="text/javascript" src="js/jquery.placeholder.js"></script>
 		<script src="js/city-picker.data.js"></script>
 		<script src="js/city-picker.js"></script>
 	</head>
@@ -47,7 +47,7 @@
 								class="xxf_logo"
 								data-toggle="modal"
 								data-target="#myModal"
-								onClick="formdis(2)"
+								onClick="formdis(1)"
 							/>
 						</li>
 					</ul>
@@ -98,7 +98,12 @@
 									<span class="point">.</span
 									><a href="javascrip:void(0)"
 										>中华人民共和国网络安全法</a
-									><em>2020.01.01</em>
+									><em
+										data-toggle="modal"
+										data-target="#myModal"
+										onClick="formdis(5)"
+										>2020.01.01</em
+									>
 								</li>
 								<li>
 									<span class="point">.</span
@@ -220,9 +225,9 @@
 			id="myModal"
 			tabindex="-1"
 			role="dialog"
-			aria-labelledby="myModalLabel"
+			aria-hidden="true"
 		>
-			<div class="modal-dialog" style="margin-top: 100px;">
+			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
 						<button
@@ -237,22 +242,34 @@
 					</div>
 					<div class="modal-body">
 						<div id="login_form" class="form">
+
+							<!-- 登录窗口 formdis(1)调用-->
 							<form class="login-form" style="display: none;">
 								<input
 									type="text"
-									class="form-control"
+									class="form-control-lhj"
 									placeholder="用户名/手机号"
+									required
 								/>
 								<input
 									type="password"
-									class="form-control"
-									placeholder="密码"
+									class="form-control-lhj"
+									placeholder="请输入密码"
+									required
 								/>
-								<input
-									type="password"
-									class="form-control"
-									placeholder="验证码"
-								/>
+								<div class="vetify-group">
+									<input
+										type="text"
+										class="form-control-lhj"
+										placeholder="请输入验证码"
+										required
+									/>
+									<img
+										class="vetify_style"
+										src="./images/verfity.png"
+										alt="验证码图片"
+									/>
+								</div>
 								<button style="margin-top: 10px;" id="login">
 									登　录
 								</button>
@@ -263,68 +280,90 @@
 									<a href="#" class="findadd">立刻找回</a>
 								</p>
 							</form>
+
+
+								<!-- 注册窗口 formdis(2)调用-->
 							<form class="register-form" style="display: none;">
 								<input
 									type="text"
-									class="form-control"
+									class="form-control-lhj"
 									placeholder="用户名"
+									required
 								/>
 								<input
 									type="password"
-									class="form-control"
+									class="form-control-lhj"
 									placeholder="设置密码"
+									required
 								/>
+								<small class="form-text-lhj">注意：密码安全级别不够！</small>
 								<input
 									type="password"
-									class="form-control"
+									class="form-control-lhj"
 									placeholder="确认密码"
+									required
 								/>
 								<input
-								type="text"
-								class="form-control"
-								placeholder="请输入您的真实姓名"
-							/>
-							
-						<input
-							type="text"
-							class="form-control"
-							placeholder="请输入您的手机号码"
-						/>
-						<input
-							type="email"
-							class="form-control"
-							placeholder="请输入您的电子邮箱"
-						/>
-						<!-- <select
-									class="selectpicker select-style"
-								>
-									<option>地域</option>
-									<option>吉林省</option>
-									<option>安全问题2</option>
-								</select> -->
-								<!-- <form class="form-inline">
-								<div id="distpicker">
-									<div class="form-group">
-										<div style="position: relative;">
-								<input id="city-picker3" class="form-control select-style" readonly type="text" value="吉林省/长春市/朝阳市" data-toggle="city-picker" />
+									type="text"
+									class="form-control-lhj"
+									placeholder="请输入您的真实姓名"
+									required
+								/>
+								<div class="vetify-group">
+									<span class="required_style">*</span>
+									<select class="selectpicker select-style">
+										<option>请选择性别</option>
+										<option>男</option>
+										<option>女</option>
+									</select>
 								</div>
-							</div>
-					
-						</div>
-					</form> -->
-					<div style="position: relative;width:300px">
-						<input id="city-picker3" class="form-control" readonly type="text" value="吉林省/长春市/朝阳区" data-toggle="city-picker">
-					</div>
 								<input
 									type="text"
-									class="form-control"
+									class="form-control-lhj"
+									placeholder="请输入您的手机号码"
+									required
+								/>
+								<input
+									type="email"
+									class="form-control-lhj"
+									placeholder="请输入您的电子邮箱"
+									required
+								/>
+
+								<div
+									style="position: relative; width: 300px;"
+									class="city_picker"
+								>
+									<span class="required_style">*</span>
+									<input
+										id="city-picker3"
+										class="form-control-lhj"
+										readonly
+										type="text"
+										value="吉林省/长春市/朝阳区"
+										data-toggle="city-picker"
+									/>
+								</div>
+								<input
+									type="text"
+									class="form-control-lhj"
 									placeholder="地址"
+									required
 								/>
-								<input
-									type="text"
-									class="form-control"
-									placeholder="验证码"
-								/>
+
+								<div class="vetify-group">
+									<input
+										type="text"
+										class="form-control-lhj"
+										placeholder="请输入验证码"
+										required
+									/>
+									<img
+										class="vetify_style"
+										src="./images/verfity.png"
+										alt="验证码图片"
+									/>
+								</div>
 								<button style="margin: 10px 0 15px;">
 									确认注册
 								</button>
@@ -333,19 +372,35 @@
 									<a href="#" class="loginadd">立刻登录</a>
 								</p>
 							</form>
+
+								<!-- 密码找回窗口 formdis(3)调用-->
 							<form
 								class="retrieve-password"
 								style="display: none;"
 							>
-								<input
-									type="text"
-									class="form-control"
-									placeholder="请输入身份证号"
-								/>
+							<input
+							type="text"
+							class="form-control-lhj"
+							placeholder="用户名/手机号"
+							required
+						/>
+						<div class="vetify-group">
+							<input
+								type="text"
+								class="form-control-lhj"
+								placeholder="请输入验证码"
+								required
+							/>
+							<img
+								class="vetify_style"
+								src="./images/verfity.png"
+								alt="验证码图片"
+							/>
+						</div>
 								<button style="margin-top: 10px;">
 									确认找回
 								</button>
-								<div
+								<!-- <div
 									style="
 										color: red;
 										font-size: 13px;
@@ -354,36 +409,33 @@
 									"
 								>
 									* 请填写注册时所用的身份证号！
-								</div>
+								</div> -->
+								<p class="message">
+									取消修改?
+									<a href="#" class="findadd">去登录</a>
+								</p>
 							</form>
-							<form class="safety-problem" style="display: none;">
-								<select
-									name="anquanwenti"
-									class="form-control m-b lhj-indent"
-									style="
-										border-radius: 7px;
-										margin-bottom: 15px;
-										font-size: 14px;
-									"
-								>
-									<option value="">请选择安全问题</option>
-									<option value="安全问题1">安全问题1</option>
-									<option value="安全问题2">安全问题2</option>
-								</select>
-								<input type="text" placeholder="安全问题答案" />
+
+								<!-- 重置密码成功窗口 formdis(4)调用-->
+							<form class="success-form" style="display: none;">
+								<img src="./images/success.png" alt=""/>
+							<p class="success-txt">
+								重置密码的链接已发送至您的邮箱<br>请及时登录您的邮箱进行密码重置
+						</p>
 								<button style="margin-top: 10px;">
-									确认修改
+									返回首页
 								</button>
-								<div
-									style="
-										color: red;
-										font-size: 13px;
-										text-align: left;
-										margin-top: 10px;
-									"
-								>
-									* 请填写安全问题用于找回密码！
-								</div>
+							</form>
+
+							<!-- 修改信息成功窗口 formdis(5)调用-->
+							<form class="success-form" style="display: none;">
+								<img src="./images/changeSuccess.png" alt=""/>
+							<p class="success-txt success-change-txt">
+								修改成功！
+						</p>
+								<button style="margin-top: 10px;">
+									返回首页
+								</button>
 							</form>
 						</div>
 					</div>
@@ -393,12 +445,15 @@
 	</body>
 	<script>
 		$(function () {
+			$('input, textarea').placeholder();
 			$('.message .loginadd').click(function () {
 				$('.register-form,.login-form').animate(
 					{
 						height: 'toggle',
 						opacity: 'toggle',
-					},'slow');
+					},
+					'slow'
+				);
 				document.getElementById('title-retrieve').innerHTML = '登录';
 			});
 			$('.message .nowadd').click(function () {
@@ -406,7 +461,9 @@
 					{
 						height: 'toggle',
 						opacity: 'toggle',
-					},'slow');
+					},
+					'slow'
+				);
 				document.getElementById('title-retrieve').innerHTML = '注册';
 			});
 			$('.message .findadd').click(function () {
@@ -414,31 +471,41 @@
 					{
 						height: 'toggle',
 						opacity: 'toggle',
-					},'slow');
-				document.getElementById('title-retrieve').innerHTML =
-					'密码找回';
+					},
+					'slow'
+				);
+				document.getElementById('title-retrieve').innerHTML = '密码找回';
 			});
 
 			var $citypicker3 = $('#city-picker3');
 
-$('#reset').click(function () {
-		$citypicker3.citypicker('reset');
-});
-
-$('#destroy').click(function () {
-		$citypicker3.citypicker('destroy');
-});
-		});
-
-		function formdis(s) {
-			let arr = ['登录', '注册', '密码找回', '安全问题'];
-			Array.from($('#login_form form')).forEach((item, index) => {
-				item.style.display = 'none';
-				if (index == s - 1) {
-					item.style.display = 'block';
-				}
+			$('#reset').click(function () {
+				$citypicker3.citypicker('reset');
 			});
+
+			$('#destroy').click(function () {
+				$citypicker3.citypicker('destroy');
+			});
+			$('input[required]').before('<span class="required_style">*</span>');
+		});
+	
+		function formdis(s) {
+			var arr = ['登录', '注册', '密码找回', '找回成功', '修改注册信息'];
+			//  Array.from($('#login_form form')).forEach((item, index) => {
+			// 		item.style.display = 'none';
+			// 		if (index == s - 1) {
+			// 			item.style.display = 'block';
+			// 		}
+			// 	});
+
+			for (var i = 0; i < $('#login_form form').length; i++) {
+				$('#login_form form')[i].style.display = 'none';
+				if (i == s - 1) {
+					$('#login_form form')[i].style.display = 'block';
+				}
+			}
+
 			document.getElementById('title-retrieve').innerHTML = arr[s - 1];
-		}
+		};
 	</script>
 </html>

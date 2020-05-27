@@ -126,6 +126,7 @@ a {
 
 a:hover {
     color: #5386cc;
+    text-decoration: none;
 }
 
 .clearfix:after {
