@@ -460,3 +460,141 @@ a:hover {
 	width:428px;
 }
 /* [v-cloak] { display: none;} */
+
+
+
+/* lhj 2020-5-27 */
+
+.modal-dialog {
+	max-width: 428px !important;
+}
+
+.form {
+	position: relative;
+	z-index: 1;
+	background: #FFFFFF;
+	margin: 0;
+	padding: 18px 31px 46px;
+	text-align: center;
+}
+
+.form input {
+	font-family: "Roboto", sans-serif;
+	outline: 0;
+	border: #d0d2d4 1px solid;
+	border-radius: 7px;
+	width: 100%;
+	margin: 0 0 15px;
+	padding: 10px 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+	text-indent: 5px;
+}
+
+.form button {
+	font-family: "Microsoft YaHei", "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: #3f75eb;
+	width: 100%;
+	border: 0;
+	padding: 10px 15px;
+	border-radius: 7px;
+	color: #FFFFFF;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+	background: #3f75eb;
+	outline: none
+}
+
+.form .message {
+	margin: 15px 0 0;
+	color: #b3b3b3;
+	font-size: 12px;
+}
+
+.form .message a {
+	color: #3f75eb;
+	text-decoration: none;
+}
+
+
+.modal-open {
+	padding-right: 0 !important;
+}
+
+.modal {
+	top: 30px
+}
+
+.required_style {
+	color: red;
+	position: absolute;
+	left: 42px;
+	margin-top: 13px;
+	font-size: 15px;
+}
+
+.vetify_style {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.vetify-group {
+	position: relative;
+}
+
+.city_picker .required_style,
+.vetify-group .required_style {
+	left: 11px;
+	z-index: 99;
+}
+
+.select-style {
+	display: block !important;
+	margin: 0 0 15px;
+}
+
+.select-style button {
+	width: 334px !important;
+	background: #fff;
+	color: #999 !important;
+	margin: 0;
+	border: #d0d2d4 1px solid;
+	padding-left: 22px;
+	font-size: 14px;
+}
+
+.select-style button:hover,
+.select-style button:active,
+.select-style button:focus {
+	background: #fff;
+}
+.form-text-lhj{
+	display: block;
+    text-align: left;
+    margin-left: 8px;
+    margin-top: -8px;
+    margin-bottom: 12px;
+    color: #8D9DAC;
+}
+.modal-title{
+	margin-left: 10px;
+}
+.success-txt,.success-change-txt{
+	width:70% ;
+	margin: 22px auto 31px;
+}
+.success-change-txt{
+	font-size: 18px;
+	margin-top: 10px;
+}
