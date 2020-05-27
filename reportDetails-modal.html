@@ -83,6 +83,228 @@
 			</p>
 		</div>
 	</div>
+	<div
+	class="modal fade"
+	id="myModal"
+	tabindex="-1"
+	role="dialog"
+	aria-hidden="true"
+>
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button
+					type="button"
+					class="close"
+					data-dismiss="modal"
+				>
+					<span aria-hidden="true">&times;</span
+					><span class="sr-only">关闭</span>
+				</button>
+				<h4 class="modal-title" id="title-retrieve">登录</h4>
+			</div>
+			<div class="modal-body">
+				<div id="login_form" class="form">
+
+					<!-- 登录窗口 formdis(1)调用-->
+					<form class="login-form" style="display: none;">
+						<input
+							type="text"
+							class="form-control-lhj"
+							placeholder="用户名/手机号"
+							required
+						/>
+						<input
+							type="password"
+							class="form-control-lhj"
+							placeholder="请输入密码"
+							required
+						/>
+						<div class="vetify-group">
+							<input
+								type="text"
+								class="form-control-lhj"
+								placeholder="请输入验证码"
+								required
+							/>
+							<img
+								class="vetify_style"
+								src="./images/verfity.png"
+								alt="验证码图片"
+							/>
+						</div>
+						<button style="margin-top: 10px;" id="login">
+							登　录
+						</button>
+						<p class="message">
+							还没有账号?
+							<a href="#" class="nowadd">立刻创建</a
+							>&nbsp;&nbsp;忘记密码?
+							<a href="#" class="findadd">立刻找回</a>
+						</p>
+					</form>
+
+
+						<!-- 注册窗口 formdis(2)调用-->
+					<form class="register-form" style="display: none;">
+						<input
+							type="text"
+							class="form-control-lhj"
+							placeholder="用户名"
+							required
+						/>
+						<input
+							type="password"
+							class="form-control-lhj"
+							placeholder="设置密码"
+							required
+						/>
+						<small class="form-text-lhj">注意：密码安全级别不够！</small>
+						<input
+							type="password"
+							class="form-control-lhj"
+							placeholder="确认密码"
+							required
+						/>
+						<input
+							type="text"
+							class="form-control-lhj"
+							placeholder="请输入您的真实姓名"
+							required
+						/>
+						<div class="vetify-group">
+							<span class="required_style">*</span>
+							<select class="selectpicker select-style">
+								<option>请选择性别</option>
+								<option>男</option>
+								<option>女</option>
+							</select>
+						</div>
+						<input
+							type="text"
+							class="form-control-lhj"
+							placeholder="请输入您的手机号码"
+							required
+						/>
+						<input
+							type="email"
+							class="form-control-lhj"
+							placeholder="请输入您的电子邮箱"
+							required
+						/>
+
+						<div
+							style="position: relative; width: 300px;"
+							class="city_picker"
+						>
+							<span class="required_style">*</span>
+							<input
+								id="city-picker3"
+								class="form-control-lhj"
+								readonly
+								type="text"
+								value="吉林省/长春市/朝阳区"
+								data-toggle="city-picker"
+							/>
+						</div>
+						<input
+							type="text"
+							class="form-control-lhj"
+							placeholder="地址"
+							required
+						/>
+
+						<div class="vetify-group">
+							<input
+								type="text"
+								class="form-control-lhj"
+								placeholder="请输入验证码"
+								required
+							/>
+							<img
+								class="vetify_style"
+								src="./images/verfity.png"
+								alt="验证码图片"
+							/>
+						</div>
+						<button style="margin: 10px 0 15px;">
+							确认注册
+						</button>
+						<p class="message">
+							已经有了一个账号?
+							<a href="#" class="loginadd">立刻登录</a>
+						</p>
+					</form>
+
+						<!-- 密码找回窗口 formdis(3)调用-->
+					<form
+						class="retrieve-password"
+						style="display: none;"
+					>
+					<input
+					type="text"
+					class="form-control-lhj"
+					placeholder="用户名/手机号"
+					required
+				/>
+				<div class="vetify-group">
+					<input
+						type="text"
+						class="form-control-lhj"
+						placeholder="请输入验证码"
+						required
+					/>
+					<img
+						class="vetify_style"
+						src="./images/verfity.png"
+						alt="验证码图片"
+					/>
+				</div>
+						<button style="margin-top: 10px;">
+							确认找回
+						</button>
+						<!-- <div
+							style="
+								color: red;
+								font-size: 13px;
+								text-align: left;
+								margin-top: 10px;
+							"
+						>
+							* 请填写注册时所用的身份证号！
+						</div> -->
+						<p class="message">
+							取消修改?
+							<a href="#" class="findadd">去登录</a>
+						</p>
+					</form>
+
+						<!-- 重置密码成功窗口 formdis(4)调用-->
+					<form class="success-form" style="display: none;">
+						<img src="./images/success.png" alt=""/>
+					<p class="success-txt">
+						重置密码的链接已发送至您的邮箱<br>请及时登录您的邮箱进行密码重置
+				</p>
+						<button style="margin-top: 10px;">
+							返回首页
+						</button>
+					</form>
+
+					<!-- 修改信息成功窗口 formdis(5)调用-->
+					<form class="success-form" style="display: none;">
+						<img src="./images/changeSuccess.png" alt=""/>
+					<p class="success-txt success-change-txt">
+						修改成功！
+				</p>
+						<button style="margin-top: 10px;">
+							返回首页
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 </body>
 <script>
 	
