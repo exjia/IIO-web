@@ -108,27 +108,17 @@
 								href="javascrip:void(0)">最高人民法院、最高人民检察院关于办理利用互联网、移动通讯终端、声讯台制作、复制、出版、贩卖、传播淫秽电子信息刑事案件具体应用法律若干问题的解释</a><em>2020.01.01</em>
 						</li>
 					</ul>
+
 					<!-- 跳转页面 -->
 					<div class="pagenum">
-						<nav aria-label="Page navigation">
-							<ul class="pagination">
-							  <li>
-								<a href="#" aria-label="Previous">
-								  <span aria-hidden="true">&laquo;</span>
-								</a>
-							  </li>
-							  <li><a href="#">1</a></li>
-							  <li><a href="#">2</a></li>
-							  <li><a href="#">3</a></li>
-							  <li><a href="#">4</a></li>
-							  <li><a href="#">5</a></li>
-							  <li>
-								<a href="#" aria-label="Next">
-								  <span aria-hidden="true">&raquo;</span>
-								</a>
-							  </li>
-							</ul>
-						  </nav>
+						<!-- <a href="#"> < </a> -->
+						<i class="icon-left"><a href="#"> </a></i>
+						<a href="#" class="check">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a>
+						<i>…</i>
+						<a href="#">12</a>
+						<i class="icon-right"><a href="#"></a></i>
+						跳转到 <input class="inputa" type="text"> 页
+						<!-- <a href="#" class="lhj-btnaa">GO</a> -->
 					</div>
 				</div>
 			</div>
@@ -148,8 +138,59 @@
 	</div>
 </body>
 <style>
-	.pagination>li>a{
-		border: none;
+	/* 跳转分页 */
+	.pagenum {
+		text-align: center;
+		margin: 55px 0 60px;
+	}
+
+	.pagenum a {
+		padding: 8px 15px;
+		background: #FAF8F7;
+		font-size: 8px;
+		color: #6B6865;
+		margin: 0 3px
+	}
+
+	.pagenum a.check {
+		background: #0090FF;
+		color: #fff
+	}
+
+	.pagenum a img {
+		margin-top: 10px
+	}
+
+	.pagenum a:hover {
+		background: #0090FF;
+		color: #fff
+	}
+
+	.pagenum .icon-left a {
+		padding: 0 15px;
+		font-size: 12px;
+		background: url(../images/lty_icon_left.png) no-repeat;
+		/* background: url(../images/lty_icon-left.png) repeat fixed center; */
+	}
+
+	.pagenum .icon-right a {
+		padding: 0 15px;
+		font-size: 12px;
+		margin: 0 0px 0 10px;
+		background: url(../images/lty_icon_right.png) no-repeat;
+	}
+
+	.pagenum i {
+		color: #6B6865;
+	}
+
+	.inputa {
+		width: 36px;
+		margin: 0 6px;
+		height: 32px;
+		line-height: 32px;
+		border: rgba(192, 193, 193, 0.5) 1px solid;
+		text-align: center;
 	}
 </style>
 
