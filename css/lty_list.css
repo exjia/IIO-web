@@ -964,3 +964,22 @@ a:hover {
 .form-control-lhj {
   display: block;
 }
+.bootstrap-select .dropdown-toggle .caret{
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  width: 10px;
+  margin-top: -3px;
+  height: 5px;
+  background: url(../images/drop-arrow.png) -10px -25px no-repeat;
+  border: 0;
+}
+
+.btn-default.active, .btn-default:active, .open > .dropdown-toggle.btn-default,.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open > .dropdown-toggle.btn-default.focus, .open > .dropdown-toggle.btn-default:focus, .open > .dropdown-toggle.btn-default:hover {
+  color: #333;
+  background-color: #fff;
+  border-color: #46A4FF;;
+}
+.bootstrap-select.open .dropdown-toggle .caret {
+  background-position: -10px -10px;
+}
