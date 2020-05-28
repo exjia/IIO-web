@@ -385,9 +385,12 @@ a:hover {
 .center-left {
   width: 60.38%;
   float: left;
+  /* 未定 */
+  height: 1112px;
 }
 .center-right {
   width: 39.62%;
+  height: 1112px;
   float: left;
   background-color: rgba(246, 244, 244, 1);
 }
@@ -420,8 +423,11 @@ a:hover {
 }
 .Details-details .red {
   color: #ff4f12;
+  font-size: 13px;
 }
-.Details-option .red {
+.Details-option .red,
+.rightMar .red,
+.redBug {
   width: 8px;
   height: 8px;
   margin-right: 4px;
@@ -477,7 +483,233 @@ a:hover {
   float: left;
   margin-left: 52px;
 }
+.Details-option-select {
+}
+.Details-option-select {
+  display: block !important;
+  /* margin: 0 0 15px; */
+}
+
+.Details-option-select button {
+  width: 305px !important;
+  height: 38px !important;
+  background: #fff;
+  color: #999 !important;
+  margin: 0;
+  border: #ccc 1px solid;
+  padding-left: 22px;
+  font-size: 14px;
+}
+
+.Details-option-select button:hover,
+.Details-option-select button:active,
+.Details-option-select button:focus {
+  background: #fff;
+}
+.margin-left {
+  margin-left: 47px;
+}
+.rightMar {
+  margin-left: 47px;
+  margin-top: 50px;
+}
+.DetailsOptionText {
+  width: 422px;
+  height: 38px;
+  border-radius: 4px 4px 0 0 !important;
+}
+.DetailsOptionTextarea {
+  width: 422px;
+  height: 125px;
+  border-radius: 0 0 4px 4px;
+  border-top: 0;
+  resize: none;
+}
+.topS {
+  margin-top: 20px;
+}
+.fuJ {
+  border-radius: 4px;
+  width: 305px;
+  height: 38px;
+}
+.fuJBtn {
+  width: 46px;
+  outline: 0;
+  color: #ffffff;
+  height: 24px;
+  background: rgba(107, 158, 235, 1);
+  border-radius: 4px;
+  font-family: "Microsoft YaHei", "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+}
+.DetailsOptionyzm {
+  /* font-family: "Roboto", sans-serif; */
+  outline: 0;
+  border: #d0d2d4 1px solid;
+  border-radius: 4px;
+  width: 305px;
+  /* margin: 0 0 15px; */
+  /* padding: 10px 15px; */
+  /* box-sizing: border-box; */
+  font-size: 14px;
+  text-indent: 5px;
+}
+.OptionyzmImg {
+  position: absolute;
+  right: 10px;
+  top: 7.5px;
+}
+.OptionButton {
+  font-family: "Microsoft YaHei", "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #3f75eb;
+  width: 160px;
+  height: 44px;
+  border: 0;
+  /* padding: 10px 15px; */
+  color: #ffffff;
+  /* font-size: 14px; */
+  /* -webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer; */
+  margin-top: 195px !important;
+  /* background:rgba(0,144,255,1); */
+  border-radius: 4px;
+}
+.bluecolor {
+  background: #6b9eeb;
+}
 /* 举报详情结束 */
+
+/* 匿名举报开始 */
+.anonymousReportCenter {
+  width: 787px !important;
+  margin: 0 auto;
+}
+.maleNo {
+  margin-left: 0 !important;
+}
+#orange {
+  background: rgba(255, 91, 34, 1);
+  color: #ffffff;
+}
+.aRinput {
+  width: 695px !important;
+}
+.aRbutton {
+  margin-top: 110px !important;
+}
+.aRmagin {
+  margin-left: 212px !important;
+  margin-right: 21px !important;
+  margin-bottom: 164px !important;
+}
+/* 匿名举报结束 */
+
+/* 登录后举报开始 */
+.dataTime {
+  width: 160px !important;
+  height: 38px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(221, 225, 232, 1) !important;
+  border-radius: 4px;
+}
+.WavyLine {
+  float: left;
+  width: 10px;
+  height: 15px;
+  margin-left: 30px;
+  font-size: 15px;
+  font-family: PingFang SC;
+  font-weight: 300;
+  color: rgba(4, 14, 28, 1);
+  line-height: 40px;
+  opacity: 0.4;
+}
+.loginData {
+  margin-top: 50px;
+}
+.LrButton {
+  width: 80px !important;
+  height: 38px;
+  margin-left: 40px !important;
+  margin-top: 0 !important;
+}
+.InquiryCode {
+  font-size: 20px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(82, 84, 88, 1);
+  line-height: 33px;
+  text-align: left;
+}
+.LrLink {
+  font-size: 14px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: rgba(112, 144, 189, 1);
+  line-height: 45px;
+  opacity: 0.8;
+}
+.LrTextContent {
+  width: 392px;
+  font-size: 16px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: rgba(94, 92, 92, 1);
+  line-height: 30px;
+  opacity: 0.8;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.LrTextData {
+  font-size: 15px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: rgba(186, 186, 186, 1);
+}
+.LrTextBox {
+  width: 420px;
+  padding: 46px 0 29px;
+  margin-left: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.LrTextBoxLast {
+  border-bottom: 0;
+}
+.switchImg{
+  width: 26px;
+  height: 26px;
+  margin-left: 237px;
+}
+.switchImgNext{
+  margin-left: 20px;
+}
+/* 登录后举报结束 */
+
+/* 登录后没有历史记录开始 */
+.NoContent {
+  padding-left: 170px;
+  padding-top: 146px;
+}
+.NoContentText {
+  font-size: 16px;
+  font-family: PingFang SC;
+  font-weight: 300;
+  color: rgba(82, 84, 88, 1);
+  line-height: 24px;
+  margin-top: 35px;
+  margin-left: 18px;
+}
+/* 登录后没有历史记录结束 */
 
 /* 雪飞 */
 /* 头部通用 */
@@ -595,142 +827,140 @@ a:hover {
 }
 /* [v-cloak] { display: none;} */
 
-
-
 /* lhj 2020-05-27 */
 .modal-dialog {
-	max-width: 428px !important;
+  max-width: 428px !important;
 }
 
 .form {
-	position: relative;
-	z-index: 1;
-	background: #FFFFFF;
-	margin: 0;
-	padding: 18px 31px 46px;
-	text-align: center;
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  margin: 0;
+  padding: 18px 31px 46px;
+  text-align: center;
 }
 
 .form input {
-	font-family: "Roboto", sans-serif;
-	outline: 0;
-	border: #d0d2d4 1px solid;
-	border-radius: 7px;
-	width: 100%;
-	margin: 0 0 15px;
-	padding: 10px 15px;
-	box-sizing: border-box;
-	font-size: 14px;
-	text-indent: 5px;
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  border: #d0d2d4 1px solid;
+  border-radius: 7px;
+  width: 100%;
+  margin: 0 0 15px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  text-indent: 5px;
 }
 
 .form button {
-	font-family: "Microsoft YaHei", "Roboto", sans-serif;
-	text-transform: uppercase;
-	outline: 0;
-	background: #3f75eb;
-	width: 100%;
-	border: 0;
-	padding: 10px 15px;
-	border-radius: 7px;
-	color: #FFFFFF;
-	font-size: 14px;
-	-webkit-transition: all 0.3 ease;
-	transition: all 0.3 ease;
-	cursor: pointer;
-	margin-top: 20px;
+  font-family: "Microsoft YaHei", "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #3f75eb;
+  width: 100%;
+  border: 0;
+  padding: 10px 15px;
+  border-radius: 7px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 .form button:hover,
 .form button:active,
 .form button:focus {
-	background: #3f75eb;
-	outline: none
+  background: #3f75eb;
+  outline: none;
 }
 
 .form .message {
-	margin: 15px 0 0;
-	color: #b3b3b3;
-	font-size: 12px;
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
 }
 
 .form .message a {
-	color: #3f75eb;
-	text-decoration: none;
+  color: #3f75eb;
+  text-decoration: none;
 }
 
-
 .modal-open {
-	padding-right: 0 !important;
+  padding-right: 0 !important;
 }
 
 .modal {
-	top: 30px
+  top: 30px;
 }
 
 .required_style {
-	color: red;
-	position: absolute;
-	left: 42px;
-	margin-top: 13px;
-	font-size: 15px;
+  color: red;
+  position: absolute;
+  left: 42px;
+  margin-top: 13px;
+  font-size: 15px;
 }
 
 .vetify_style {
-	position: absolute;
-	right: 10px;
-	top: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 .vetify-group {
-	position: relative;
+  position: relative;
 }
 
 .city_picker .required_style,
 .vetify-group .required_style {
-	left: 11px;
-	z-index: 99;
+  left: 11px;
+  z-index: 99;
 }
 
 .select-style {
-	display: block !important;
-	margin: 0 0 15px;
+  display: block !important;
+  margin: 0 0 15px;
 }
 
 .select-style button {
-	width: 334px !important;
-	background: #fff;
-	color: #999 !important;
-	margin: 0;
-	border: #d0d2d4 1px solid;
-	padding-left: 22px;
-	font-size: 14px;
+  width: 334px !important;
+  background: #fff;
+  color: #999 !important;
+  margin: 0;
+  border: #d0d2d4 1px solid;
+  padding-left: 22px;
+  font-size: 14px;
 }
 
 .select-style button:hover,
 .select-style button:active,
 .select-style button:focus {
-	background: #fff;
+  background: #fff;
 }
-.form-text-lhj{
-	display: block;
-    text-align: left;
-    margin-left: 8px;
-    margin-top: -8px;
-    margin-bottom: 12px;
-    color: #8D9DAC;
+.form-text-lhj {
+  display: block;
+  text-align: left;
+  margin-left: 8px;
+  margin-top: -8px;
+  margin-bottom: 12px;
+  color: #8d9dac;
 }
-.modal-title{
-	margin-left: 10px;
+.modal-title {
+  margin-left: 10px;
 }
-.success-txt,.success-change-txt{
-	width:70% ;
-	margin: 22px auto 31px;
+.success-txt,
+.success-change-txt {
+  width: 70%;
+  margin: 22px auto 31px;
 }
-.success-change-txt{
-	font-size: 18px;
-	margin-top: 10px;
+.success-change-txt {
+  font-size: 18px;
+  margin-top: 10px;
 }
-.form-control-lhj{
-	display: block;
+.form-control-lhj {
+  display: block;
 }
