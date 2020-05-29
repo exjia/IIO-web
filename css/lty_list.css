@@ -59,11 +59,13 @@ a:hover {
 .news-list {
   margin-top: 12px;
   margin-bottom: 12px;
+  padding-bottom: 20px;
   border-bottom: #dbdbdb 1px solid;
 }
 .news-list-last {
   margin-top: 12px;
   margin-bottom: 12px;
+  padding-bottom: 20px;
 }
 /* list新闻的具体内容开始 */
 .news-list-info {
@@ -181,7 +183,7 @@ a:hover {
   display: block;
   width: 13%;
   text-align: center;
-  padding-bottom: 26px;
+  padding-bottom: 76px;
   margin: 0 auto;
 }
 
@@ -435,6 +437,7 @@ a:hover {
 .Details-option-left {
   margin-left: 43px;
   float: left;
+  padding-top: 28px;
 }
 .Details-option-title {
   font-size: 14px;
@@ -480,13 +483,13 @@ a:hover {
 .Details-option-right {
   float: left;
   margin-left: 52px;
+  padding-top: 28px;
 }
 
 .Details-option-select {
   display: block !important;
-  /* margin: 0 0 15px; */
 }
-
+/* select 的样式 */
 .Details-option-select button {
   width: 305px !important;
   height: 38px !important;
@@ -502,6 +505,9 @@ a:hover {
 .Details-option-select button:active,
 .Details-option-select button:focus {
   background: #fff;
+}
+.aRwidth .Details-option-select button{
+  width: 330px !important;
 }
 .margin-left {
   margin-left: 47px;
@@ -543,16 +549,11 @@ a:hover {
   border: 0;
 }
 .DetailsOptionyzm {
-  /* font-family: "Roboto", sans-serif; */
   outline: 0;
   border: #d0d2d4 1px solid;
   border-radius: 4px;
   width: 305px;
-  /* margin: 0 0 15px; */
-  /* padding: 10px 15px; */
-  /* box-sizing: border-box; */
   font-size: 14px;
-  text-indent: 5px;
 }
 .OptionyzmImg {
   position: absolute;
@@ -567,17 +568,13 @@ a:hover {
   width: 160px;
   height: 44px;
   border: 0;
-  /* padding: 10px 15px; */
   color: #ffffff;
-  /* font-size: 14px; */
-  /* -webkit-transition: all 0.3 ease;
-	transition: all 0.3 ease;
-	cursor: pointer; */
+  margin-left: 16px;
   margin-top: 195px !important;
-  /* background:rgba(0,144,255,1); */
   border-radius: 4px;
 }
 .bluecolor {
+  margin-left: 46px;
   background: #6b9eeb;
 }
 /* 举报详情结束 */
@@ -602,8 +599,11 @@ a:hover {
 }
 .aRmagin {
   margin-left: 212px !important;
-  margin-right: 21px !important;
+  /* margin-right: 21px !important; */
   margin-bottom: 164px !important;
+}
+.aRwidth{
+  width: 330px !important;
 }
 /* 匿名举报结束 */
 
@@ -979,4 +979,18 @@ a:hover {
 }
 .bootstrap-select.open .dropdown-toggle .caret {
   background-position: -10px -10px;
+}
+/* 修改select样式开始 */
+.bootstrap-select .dropdown-menu li a span.text{
+  font-size: 14px;
+}
+.bootstrap-select .dropdown-menu li.active a span.text{
+  color: #fff;
+  font-size: 14px;
+}
+/* 修改select样式结束 */
+
+/* 上传的input背景色 */
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{
+  background-color: #fff;
 }

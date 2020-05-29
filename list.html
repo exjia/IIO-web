@@ -9,10 +9,13 @@
 	<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 	<link rel="stylesheet"
 		href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css" />
+	<link href="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css"
+		rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="css/lty_list.css" />
 	<link rel="stylesheet" type="text/css" href="css/index.css" />
 	<link rel="stylesheet" type="text/css" href="css/city-picker.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 	<!--[if lte IE 8]>
 			<script>
 				window.location.href =
@@ -27,8 +30,12 @@
 	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
 	<script type="text/javascript" src="js/jquery.placeholder.js"></script>
+	<script src="js/jQuery.rTabs.js"></script>
 	<script src="js/city-picker.data.js"></script>
 	<script src="js/city-picker.js"></script>
+	<script src="js/moment-with-locales.js"></script>
+	<script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+	<script src="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js" charset="UTF-8"></script>
 </head>
 
 <body>
@@ -74,19 +81,19 @@
 						</div>
 						<ul class="news-list news-list-info">
 							<li>
-								<span class="point">.</span><a href="javascrip:void(0)">中华人民共和国网络安全法</a><em
+								<span class="point"></span><a href="javascrip:void(0)">中华人民共和国网络安全法</a><em
 									data-toggle="modal" data-target="#myModal" onClick="formdis(4)">2020.01.01</em>
 							</li>
 							<li>
-								<span class="point">.</span><a
+								<span class="point"></span><a
 									href="javascrip:void(0)">中华人民共和国电子签名法</a><em>2020.01.01</em>
 							</li>
 							<li>
-								<span class="point">.</span><a
+								<span class="point"></span><a
 									href="javascrip:void(0)">中华人民共和国电子商务法</a><em>2020.01.01</em>
 							</li>
 							<li>
-								<span class="point">.</span><a
+								<span class="point"></span><a
 									href="javascrip:void(0)">全国人民代表大会常务委员会关于加强网络信息保护的决定</a><em>2020.01.01</em>
 							</li>
 						</ul>
@@ -95,19 +102,19 @@
 						<span class="news"><a href="javascrip:void(0)">行政法规</a></span>
 						<ul class="news-list news-list-info">
 							<li>
-								<span class="point">.</span><a
-									href="javascrip:void(0)">国务院关于授权国家互联网信息办公室负责互联网信息内容管理工作的通知 </a><em>2020.01.01</em>
-							</li>
-							<li>
-								<span class="point">.</span><a href="javascrip:void(0)">信息网络传播权保护条例
+								<span class="point"></span><a href="javascrip:void(0)">国务院关于授权国家互联网信息办公室负责互联网信息内容管理工作的通知
 								</a><em>2020.01.01</em>
 							</li>
 							<li>
-								<span class="point">.</span><a href="javascrip:void(0)">互联网上网服务营业场所管理条例
+								<span class="point"></span><a href="javascrip:void(0)">信息网络传播权保护条例
 								</a><em>2020.01.01</em>
 							</li>
 							<li>
-								<span class="point">.</span><a href="javascrip:void(0)">计算机软件保护条例</a><em>2020.01.01</em>
+								<span class="point"></span><a href="javascrip:void(0)">互联网上网服务营业场所管理条例
+								</a><em>2020.01.01</em>
+							</li>
+							<li>
+								<span class="point"></span><a href="javascrip:void(0)">计算机软件保护条例</a><em>2020.01.01</em>
 							</li>
 						</ul>
 					</div>
@@ -115,22 +122,22 @@
 						<span class="news"><a href="javascrip:void(0)">司法解释</a></span>
 						<ul class="news-list-last news-list-info">
 							<li>
-								<span class="point">.</span><a
+								<span class="point"></span><a
 									href="javascrip:void(0)">最高人民法院关于审理利用信息网络侵害人身权益民事纠纷案件适用法律若干问题的规定
 								</a><em>2020.01.01</em>
 							</li>
 							<li>
-								<span class="point">.</span><a
+								<span class="point"></span><a
 									href="javascrip:void(0)">最高人民法院、最高人民检察院关于办理利用信息网络实施诽谤等刑事案件适用法律若干问题的解释
 								</a><em>2020.01.01</em>
 							</li>
 							<li>
-								<span class="point">.</span><a
+								<span class="point"></span><a
 									href="javascrip:void(0)">最高人民法院关于审理侵害信息网络传播权民事纠纷案件适用法律若干问题的规定
 								</a><em>2020.01.01</em>
 							</li>
 							<li>
-								<span class="point">.</span><a
+								<span class="point"></span><a
 									href="javascrip:void(0)">最高人民法院、最高人民检察院关于办理利用互联网、移动通讯终端、声讯台制作、复制、出版、贩卖、传播淫秽电子信息刑事案件具体应用法律若干问题的解释</a><em>2020.01.01</em>
 							</li>
 						</ul>
@@ -143,7 +150,7 @@
 						<i>…</i>
 						<a href="#">12</a>
 						<i class="icon-right"><a href="#"></a></i>
-						跳转到 <input class="inputa" type="text"> 页
+						 前往 <input class="inputa" type="text"> 页
 						<!-- <a href="#" class="lhj-btnaa">GO</a> -->
 					</div>
 				</div>
@@ -348,25 +355,11 @@
 		document.getElementById('title-retrieve').innerHTML = arr[s - 1];
 	};
 </script>
-<!-- 页面下方版权内容 -->
-<!-- <div class="copyright">
-			<p class="copyright-p">
-				<span>Copyright@版权所有</span>
-				<span>长春市互联网违法和不良信息举报中心</span>
-			</p>
-			<p class="copyright-p">
-				<span>吉ICP备05000000号</span>
-				<span><img src="images/Bz.png" width="14" height="16" class="footer_img"></span>
-				<span>吉公网安备 22000002000002号</span>
-			</p>
-		</div>
-	</div>
-</body> -->
 <style>
 	/* 跳转分页 */
 	.pagenum {
 		text-align: center;
-		margin: 55px 0 60px;
+		margin: 55px 0 0px;
 	}
 
 	.pagenum a {
@@ -418,9 +411,11 @@
 		text-align: center;
 	}
 </style>
+<script>
 
 // document.getElementById('title-retrieve').innerHTML = arr[s - 1];
 // };
-// </script>
+// 
+</script>
 
 </html>
