@@ -33,7 +33,7 @@
     <script src="js/city-picker.js"></script>
     <script src="js/moment-with-locales.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"
-        charset="UTF-8"></script>
+        charset="UTF-8"></script>     
 </head>
 
 <body>
@@ -104,9 +104,16 @@
                             placeholder="请输入标题">
                         <textarea class="form-control DetailsOptionTextarea margin-left aRinput" rows="7"></textarea>
                         <p class="Details-option-title margin-left"> 上传图片/附件</p>
-                        <div style="position:relative; width: 305px;" class="margin-left">
+                        <!-- <div style="position:relative; width: 305px;" class="margin-left">
                             <input type="text" class="form-control  fuJ" placeholder="请上传附件">
                             <button class="OptionyzmImg fuJBtn">游览</button>
+                        </div> -->
+                        <div style="position:relative; width: 305px;cursor:pointer;" class="margin-left">
+                            <input type="text" class="form-control  fuJ" placeholder="请上传附件"  id="filename" readonly>
+                            <a href="javascript:;" class="file">
+                                <button class="OptionyzmImg fuJBtn">游览</button>
+                                <input type="file" name="" id="">
+                            </a>
                         </div>
                         <p class="Details-option-title margin-left"> 请输入验证码</p>
                         <div style="position:relative; width: 305px;" class=" margin-left">
@@ -146,7 +153,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <span class="WavyLine">~</span>
                             <div class='col-sm-6' style="width: 150px;">
                                 <div class="form-group">
@@ -162,7 +169,7 @@
                             </button>
                         </div>
                         <div style="clear:both;"></div>
-                        <!-- 有历史记录的状态 -->
+                        <!-- 有历史记录的状态开始 -->
                         <div style="display: none;">
                             <div class="LrTextBox">
                                 <a href="">
@@ -246,12 +253,26 @@
         </div>
     </div>
 </body>
+<style>
+	.Details-option-content .on_check {
+		color: #0090FF;
+		border: 1px solid rgba(0, 144, 255, 1);
+	}
+	.file input {
+		position: absolute;
+		right: 0;
+		top: 0;
+		opacity: 0;
+	}
+	.file:hover {
+		cursor:pointer;
+	}
+</style>
 <script>
     $(function () {
         var picker1 = $('#datetimepicker1').datetimepicker({
             format: 'YYYY-MM-DD',
             locale: moment.locale('zh-cn'),
-            //minDate: '2016-7-1'
         });
         var picker2 = $('#datetimepicker2').datetimepicker({
             format: 'YYYY-MM-DD',

@@ -24,7 +24,7 @@ a:hover {
 .center span {
   display: inline-block;
   color: #6e6e6e;
-  font-family: Microsoft YaHei;
+  /* font-family: Microsoft YaHei; */
 }
 
 .center li a {
@@ -476,15 +476,12 @@ a:hover {
   height: 16px;
   background-size: 16px 16px;
 }
-.Details-option-content {
-  /* background-color: pink; */
-}
+
 .Details-option-right {
   float: left;
   margin-left: 52px;
 }
-.Details-option-select {
-}
+
 .Details-option-select {
   display: block !important;
   /* margin: 0 0 15px; */
