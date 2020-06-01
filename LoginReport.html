@@ -79,7 +79,7 @@
                         <div class="Details-classification">
                             <input type="button" value="实名用户举报" style=" border-left: 1px solid rgba(221,225,232,1);">
                             <input type="button" value="匿名用户举报">
-                            <input type="button" value="注册用户举报" class="blue">
+                            <input type="button" value="注册用户举报" class="blue" id="button1">
                         </div>
                         <!-- 选择项开始 -->
                         <div style="float: left;margin-left: 47px;width: 330px;" class="aRwidth">
@@ -136,20 +136,12 @@
                     <div class="center-right">
                         <div class="center-title">
                             <h1><a href="javascrip:void(0)">个人中心</a></h1>/
-                            <a href="">
-                                <img src="images/sign-out-blue.png" alt="" class="switchImg">
-                                <!-- <img src="images/sign-out.png" alt=""> -->
-                            </a>
-                            <a href="">
-                                <img src="images/modify-blue.png" alt="" class="switchImgNext">
-                                <!-- <img src="images/modify.png" alt=""> -->
-                            </a>
+                            <img src="images/sign-out.png" alt="" class="switchImg" id="switchImg">
+                            <img src="images/modify.png" alt="" class="switchImgNext" id="switchImgNext">
                         </div>
-
+                        <!-- 时间插件 -->
                         <div class="loginData">
-                            <!-- <input type="text" class="form-control  fuJ" placeholder="开始时间">
-                            <input type="text" class="form-control  fuJ" placeholder="结束时间"> -->
-                            <div class='col-sm-6' style="width: 158px;">
+                            <div class='col-sm-6' style="width: 158px;margin-left: 18px;">
                                 <div class="form-group">
                                     <!--指定 date标记-->
                                     <div class='input-group date' id='datetimepicker1'>
@@ -175,7 +167,7 @@
                         </div>
                         <div style="clear:both;"></div>
                         <!-- 有历史记录的状态开始 -->
-                        <div style="display: none;">
+                        <div style="display: none;" id="div1" class="History" >
                             <div class="LrTextBox">
                                 <a href="">
                                     <p class="InquiryCode">
@@ -294,13 +286,30 @@
             picker1.data('DateTimePicker').maxDate(e.date);
         });
     });
-    // 上传用 名称显示
+    // 上传用 名称显示上传文件名字
     $(".file").on("change", "input[type='file']", function () {
         var filePath = $(this).val();
         var arr = filePath.split('\\');
         var fileName = arr[arr.length - 1];
         $('#filename').attr('placeholder', fileName);
     })
+    // 右上角图标转换
+    $("#switchImg").hover(function () {
+        $("#switchImg").attr("src", "images/sign-out-blue.png");
+    }, function () {
+        $("#switchImg").attr("src", "images/sign-out.png");
+    });
+
+    $("#switchImgNext").hover(function () {
+        $("#switchImgNext").attr("src", "images/modify-blue.png");
+    }, function () {
+        $("#switchImgNext").attr("src", "images/modify.png");
+    });
+    // 点击切换效果。可以删除
+    $("#button1").click(function () {
+        $('#div1').css('display', 'block' );
+        $('.NoContent').css('display', 'none' );
+    });
 </script>
 
 </html>

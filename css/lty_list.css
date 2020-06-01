@@ -213,10 +213,9 @@ a:hover {
   width: 108px;
   height: 108px;
   border-radius: 50%;
-  border: #dbdbdb 1px solid;
+  /* border: #dbdbdb 1px solid; */
   display: inline-block;
   text-align: center;
-  /* position: relative; */
   margin-right: 90px;
   margin-top: 100px;
   line-height: 110px;
@@ -320,6 +319,7 @@ a:hover {
   font-size: 20px;
   color: #040e1c;
   margin-top: 20px;
+  font-weight: 500;
 }
 .report_result .report_result_message {
   width: 416px;
@@ -355,6 +355,7 @@ a:hover {
 .reportGuide-title p.titContent {
   padding-bottom: 5px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  line-height: 32px;
 }
 .reportGuide-content {
   width: 1058px;
@@ -644,6 +645,15 @@ a:hover {
   line-height: 33px;
   text-align: left;
 }
+.History{
+  height: 810px;  
+  overflow-y: auto;
+  -ms-overflow-style:none;
+  overflow:-moz-scrollbars-none;
+}
+::-webkit-scrollbar{
+  display:none;
+}
 .LrLink {
   font-size: 14px;
   font-family: PingFang SC;
@@ -672,11 +682,13 @@ a:hover {
   font-family: PingFang SC;
   font-weight: 400;
   color: rgba(186, 186, 186, 1);
+  line-height: 26px;
 }
 .LrTextBox {
   width: 420px;
   padding: 46px 0 29px;
-  margin-left: 15px;
+  /* margin-left: 15px; */
+  margin-left: 35px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .LrTextBoxLast {
