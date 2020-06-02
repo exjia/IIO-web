@@ -726,11 +726,15 @@ a:hover {
   width: 1300px;
   margin: 0 auto;
   padding-bottom: 28px;
+  /* background: url(../images/xxf_bj.png) #88a3de top left no-repeat; */
 }
-.bj {
+#app{
+  background: url(../images/xxf_bj.png) #88a3de top left no-repeat;
+}
+/* .bj {
   background: url(../images/xxf_bj.png) #88a3de top left no-repeat;
   border: none;
-}
+} */
 .xxf_logo {
   margin-top: 27px;
   margin-left: 38px;
@@ -767,6 +771,11 @@ a:hover {
   float: left;
 }
 .xxf_nav li a:hover {
+  border-bottom: 3px solid #0090ff;
+  padding-bottom: 8px;
+  text-decoration: none;
+}
+.hover{
   border-bottom: 3px solid #0090ff;
   padding-bottom: 8px;
   text-decoration: none;
@@ -822,6 +831,9 @@ a:hover {
 .copyright-p {
   margin-bottom: 12px;
 }
+.copyright-p-last{
+  margin-bottom: 28px;
+}
 .copyright-p span {
   margin-right: 7px;
 }
@@ -834,7 +846,6 @@ a:hover {
   padding-bottom: 29px;
   width: 428px;
 }
-/* [v-cloak] { display: none;} */
 
 /* lhj 2020-05-27 */
 .modal-dialog {
