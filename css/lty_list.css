@@ -5,7 +5,8 @@ body {
   font-size: 14px;
   text-align: left;
   min-width: 1300px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Microsoft YaHei", "PingFangSC";
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 /* list 页面的样式  */
 a {
@@ -401,7 +402,7 @@ a:hover {
   width: 39.62%;
   height: 1112px;
   float: left;
-  border:1px solid rgba(181,193,201,0.3);
+  border: 1px solid rgba(181, 193, 201, 0.3);
   background-color: rgba(246, 244, 244, 0.3);
 }
 .Details-classification {
@@ -601,7 +602,7 @@ span.mclear {
   width: 787px !important;
   margin: 0 auto;
   /* 阴影添加位置 数值不对*/
-  box-shadow: 1px 1px 5px #E7EAEE
+  box-shadow: 1px 1px 5px #e7eaee;
 }
 .maleNo {
   margin-left: 0 !important;
@@ -716,7 +717,7 @@ span.mclear {
   width: 26px;
   height: 26px;
   margin-left: 237px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 .switchImgNext {
   margin-left: 20px;
