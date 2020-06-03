@@ -602,7 +602,7 @@ span.mclear {
   width: 787px !important;
   margin: 0 auto;
   /* 阴影添加位置 数值不对*/
-  box-shadow: 1px 1px 5px #e7eaee;
+  box-shadow: 1px 0 10px -10px #1a1b1b, -1px 0 10px -10px #1a1b1b;
 }
 .maleNo {
   margin-left: 0 !important;
