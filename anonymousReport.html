@@ -107,9 +107,7 @@
                         <textarea class="form-control DetailsOptionTextarea margin-left aRinput" rows="7"></textarea>
                         <p class="Details-option-title margin-left"> 上传图片/附件</p>
                         <div style="position:relative; width: 305px;cursor:pointer;" class="margin-left aRwidth">
-                            <!-- <input type="text" class="form-control  fuJ" placeholder="请上传附件">
-                            <button class="OptionyzmImg fuJBtn"浏览</button> -->
-                            <input type="text" class="form-control  fuJ aRwidth" placeholder="请上传附件" id="filename" readonly>
+                            <input type="text" class="form-control  fuJ aRwidth" placeholder="请上传附件" value="" id="filename" readonly>
 								<!-- 上传尝试 -->
 								<a href="javascript:;" class="file">
 									<button class="OptionyzmImg fuJBtn">浏览</button>
@@ -173,6 +171,7 @@
 		var arr = filePath.split('\\');
 		var fileName = arr[arr.length - 1];
 		$('#filename').attr('placeholder', fileName);
+        document.getElementById('filename').value = fileName;
 	})
 </script>
 </html>

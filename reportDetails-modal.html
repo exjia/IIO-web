@@ -448,6 +448,7 @@
 		var arr = filePath.split('\\');
 		var fileName = arr[arr.length - 1];
 		$('#filename').attr('placeholder', fileName);
+		document.getElementById('filename').value = fileName;
 	})
 	// 右上角图标转换
 	$("#switchImg").hover(function () {
