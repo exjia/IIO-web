@@ -601,7 +601,7 @@ span.mclear {
   width: 787px !important;
   margin: 0 auto;
   /* 阴影添加位置 数值不对*/
-  /* box-shadow: 1px 1px 5px pink */
+  box-shadow: 1px 1px 5px #E7EAEE
 }
 .maleNo {
   margin-left: 0 !important;
@@ -716,9 +716,11 @@ span.mclear {
   width: 26px;
   height: 26px;
   margin-left: 237px;
+  cursor: pointer; 
 }
 .switchImgNext {
   margin-left: 20px;
+  cursor: pointer;
 }
 /* 登录后举报结束 */
 
