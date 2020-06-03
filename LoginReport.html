@@ -385,6 +385,9 @@
     .file:hover {
         cursor: pointer;
     }
+    .margin-left .required_style{
+		display: none!important;
+	} 
 </style>
 <script>
     $(function () {
@@ -456,6 +459,7 @@
         var fileName = arr[arr.length - 1];
         // $('#filename').attr('placeholder', fileName);
         $('#filename').attr('value', fileName);
+        document.getElementById('filename').value = fileName;
     })
     // 右上角图标转换
     $("#switchImg").hover(function () {

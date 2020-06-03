@@ -238,7 +238,9 @@ a:hover {
 .online-reporting-one li.first {
   margin-left: 85px;
 }
-
+.margin-left .required_style{
+  display: none!important;
+}
 .online-reporting-one li img,
 .online-reporting-two li img {
   vertical-align: middle;
