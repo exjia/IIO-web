@@ -1,0 +1,7 @@
+.CentralContent{
+    float: left;
+    margin-left: 32px;
+}
+.CentralContent_left,.CentralContent_middle,.CentralContent_right{
+    float: left;
+}

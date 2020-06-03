@@ -34,166 +34,176 @@
 	<script src="js/city-picker.js"></script>
 	<script src="js/moment-with-locales.js"></script>
 	<script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
-	<script src="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js" charset="UTF-8"></script>
+	<script src="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"
+		charset="UTF-8"></script>
 </head>
 
 <body>
 	<div id="app">
 		<!-- <div class="bj"> -->
-			<div class="body">
-				<img src="images/logo.png" width="963" height="90" class="xxf_logo" data-toggle="modal"
-					data-target="#myModal" onClick="formdis(2)">
-				<div class="xxf_top">
-					<ul class="xxf_nav">
-						<li class="xxf_nav_one"><a href="">首页</a></li>
-						<li><a href="">举报指南</a></li>
-						<li><a href="">法律法规</a></li>
-						<li><a href="">安全警示</a></li>
-						<li><a href="">网络治理</a></li>
-						<li><a href="">机构简介</a></li>
+		<div class="body">
+			<img src="images/logo.png" width="963" height="90" class="xxf_logo" data-toggle="modal"
+				data-target="#myModal" onClick="formdis(2)">
+			<div class="xxf_top">
+				<ul class="xxf_nav">
+					<li class="xxf_nav_one"><a href="">首页</a></li>
+					<li><a href="">举报指南</a></li>
+					<li><a href="">法律法规</a></li>
+					<li><a href="">安全警示</a></li>
+					<li><a href="">网络治理</a></li>
+					<li><a href="">机构简介</a></li>
+				</ul>
+
+				<div class="xxf_time">
+					<ul class="xxf_timeall">
+						<div
+							style="height:0px; width:0px; border-top:solid 51px #204490; border-right:solid 30px transparent; float: left;">
+						</div>
+						<li class="xxf_year">2020年01月</li>
+						<li class="xxf_week">星期四</li>
+						<li class="xxf_day">2</li>
 					</ul>
-
-					<div class="xxf_time">
-						<ul class="xxf_timeall">
-							<div
-								style="height:0px; width:0px; border-top:solid 51px #204490; border-right:solid 30px transparent; float: left;">
-							</div>
-							<li class="xxf_year">2020年01月</li>
-							<li class="xxf_week">星期四</li>
-							<li class="xxf_day">2</li>
-						</ul>
-					</div>
 				</div>
-				<!-- 页面中部分内容 -->
-				<div class="center">
-					<!-- 左部分 -->
-					<div class="center-left">
-						<div class="center-title">
-							<h1><a href="javascrip:void(0)">举报人信息</a></h1>/
-						</div>
-						<div class="Details-details">
-							实名举报有机会
-							<span class="red"> 获得相应的奖励</span>，
-							非实名举报不在奖励范围
-						</div>
-						<div class="Details-classification">
-							<input type="button" value="实名用户举报" class="blue"
-								style=" border-left: 1px solid rgba(221,225,232,1);">
-							<input type="button" value="匿名用户举报">
-							<input type="button" value="注册用户举报">
-
-						</div>
-						<div class="Details-option">
-							<div class="Details-option-left">
-								<p class="Details-option-title"> <img src="images/start.png" class="red">举报主体</p>
-								<p class="Details-option-content">
-									<button type="button" class="button">公民</button>
-									<button type="button" class="button">法人及其他组织</button>
-								</p>
-								<p class="Details-option-title"> <img src="images/start.png" class="red">性别</p>
-								<p class="Details-option-content">
-									<button type="button" class="button">男</button>
-									<button type="button" class="button">女</button>
-								</p>
-								<p class="Details-option-title"> <img src="images/start.png" class="red">手机号</p>
-								<p class="relative">
-									<input type="text" class="form-control Details-option-from" id="mname1" placeholder="请输入手机号">
-									<!--清空按钮 -->
-									<span class="mclear" id="mclear1"> </span>
-								</p>
-								<p class="Details-option-title"> <img src="images/start.png" class="red">身份证号</p>
-								<p class="relative">
-									<input type="text" class="form-control Details-option-from" id="mname2" placeholder="请输入身份证号">
-									<span class="mclear" id="mclear2"> </span>
-								</p>
-								<p class="Details-option-title">通信地址</p>
-								<p>
-									<input type="text" class="form-control Details-option-from" placeholder="请输入通信地址">
-								</p>
-							</div>
-							<div class="Details-option-right">
-								<p class="Details-option-title"> <img src="images/start.png" class="red">真实姓名</p>
-								<p class="relative">
-									<input type="text" class="form-control Details-option-from" id="mname3" placeholder="请输入您的真实姓名">
-									<span class="mclear" id="mclear3"> </span>
-								</p>
-								<p class="Details-option-title"> <img src="images/start.png" class="red">从业类别</p>
-								
-								<select class="selectpicker  Details-option-select">
-									<option>请选择从业类别</option>
-									<option>政治类</option>
-									<option>其他类</option>
-								</select>
-								<p class="Details-option-title"> <img src="images/start.png" class="red">邮箱</p>
-								<p class="relative">
-									<input type="text" class="form-control Details-option-from" id="mname4" placeholder="请输入邮箱地址">
-									<span class="mclear" id="mclear4"> </span>
-								</p>
-								<p class="Details-option-title"> <img src="images/start.png" class="red">地域</p>
-								<p class="relative">
-									<input type="text" class="form-control Details-option-from" id="mname5" placeholder="请输入地域">
-									<span class="mclear" id="mclear5"> </span>
-								</p>
-							</div>
-						</div>
+			</div>
+			<!-- 页面中部分内容 -->
+			<div class="center">
+				<!-- 左部分 -->
+				<div class="center-left">
+					<div class="centerTitle">
+						<h1><a href="javascrip:void(0)">举报人信息</a></h1>/
 					</div>
-					<!-- 右部分 -->
-					<div class="center-right">
+					<div class="Details-details">
+						实名举报有机会
+						<span class="red"> 获得相应的奖励</span>，
+						非实名举报不在奖励范围
+					</div>
+					<div class="Details-classification">
+						<input type="button" value="实名用户举报" class="blue"
+							style=" border-left: 1px solid rgba(221,225,232,1);">
+						<input type="button" value="匿名用户举报">
+						<input type="button" value="注册用户举报">
 
-						<div class="center-title">
-							<h1><a href="javascrip:void(0)">举报信息</a></h1>/
+					</div>
+					<div class="Details-option">
+						<div class="Details-option-left">
+							<p class="Details-option-title"> <img src="images/start.png" class="red">举报主体</p>
+							<p class="Details-option-content">
+								<button type="button" class="button">公民</button>
+								<button type="button" class="button">法人及其他组织</button>
+							</p>
+							<p class="Details-option-title"> <img src="images/start.png" class="red">性别</p>
+							<p class="Details-option-content">
+								<button type="button" class="button">男</button>
+								<button type="button" class="button">女</button>
+							</p>
+							<p class="Details-option-title"> <img src="images/start.png" class="red">手机号</p>
+							<p class="relative">
+								<input type="text" class="form-control Details-option-from" id="mname1"
+									placeholder="请输入手机号" required="required">
+								<!--清空按钮 -->
+								<span class="mclear" id="mclear1" > </span>
+							</p>
+							<p class="Details-option-title"> <img src="images/start.png" class="red">身份证号</p>
+							<p class="relative">
+								<input type="text" class="form-control Details-option-from" id="mname2"
+									placeholder="请输入身份证号" required="required">
+								<span class="mclear" id="mclear2"> </span>
+							</p>
+							<p class="Details-option-title">通信地址</p>
+							<p>
+								<input type="text" class="form-control Details-option-from" placeholder="请输入通信地址">
+							</p>
 						</div>
-						<!-- 右侧内容开始 -->
-						<div class="rightMar">
-							<p class="Details-option-title topS"> <img src="images/start.png" class="red">危害类型</p>
-							<!-- select -->
-							<select class="selectpicker Details-option-select " style="width: 305px ;height: 38px;">
-								<option>请选择危害类型</option>
+						<div class="Details-option-right">
+							<p class="Details-option-title"> <img src="images/start.png" class="red">真实姓名</p>
+							<p class="relative">
+								<input type="text" class="form-control Details-option-from" id="mname3"
+									placeholder="请输入您的真实姓名" required="required">
+								<span class="mclear" id="mclear3"> </span>
+							</p>
+							<p class="Details-option-title"> <img src="images/start.png" class="red">从业类别</p>
+
+							<select class="selectpicker  Details-option-select">
+								<option>请选择从业类别</option>
 								<option>政治类</option>
 								<option>其他类</option>
 							</select>
-							<p class="Details-option-title topS"> <img src="images/start.png" class="red">被举报类型</p>
-							<select class="selectpicker Details-option-select " style="width: 305px ;height: 38px;">
-								<option>请选择被举报类型</option>
-								<option>网址类</option>
-								<option>其他类</option>
-							</select>
-							<p class="Details-option-title topS"> <img src="images/start.png" class="red">举报内容</p>
-							<!-- 表单输入开始 -->
-							<input type="text" class="form-control DetailsOptionText" placeholder="请输入标题">
-							<textarea class="form-control DetailsOptionTextarea" rows="5"></textarea>
-							<p class="Details-option-title topS"> 上传图片/附件</p>
-							<div style="position:relative; width: 305px;cursor:pointer;">
-								<input type="text" class="form-control  fuJ" placeholder="请上传附件" id="filename" readonly>
-								<!-- 上传尝试 -->
-								<a href="javascript:;" class="file">
-									<button class="OptionyzmImg fuJBtn">游览</button>
-									<input type="file" name="" id="">
-								</a>
-							</div>
-							<!-- <input type="text" class="form-control  fuJ" placeholder="请上传附件"> -->
-							<p class="Details-option-title topS"> 请输入验证码</p>
-							<div style="position:relative; width: 305px;">
-								<input type="text" class="form-control DetailsOptionyzm" placeholder="请输入验证码" />
-								<img class="OptionyzmImg" src="./images/verfity.png" alt="验证码图片" />
-							</div>
-							<button class="OptionButton bluecolor">
-								重置
-							</button>
-							<button class="OptionButton">
-								确认
-							</button>
-							<!-- <p class="Details-option-title topS"> 请输入验证码</p> -->
+							<p class="Details-option-title"> <img src="images/start.png" class="red">邮箱</p>
+							<p class="relative">
+								<input type="text" class="form-control Details-option-from" id="mname4"
+									placeholder="请输入邮箱地址" required="required">
+								<span class="mclear" id="mclear4"> </span>
+							</p>
+							<p class="Details-option-title"> <img src="images/start.png" class="red">地域</p>
+							<p class="relative">
+								<input type="text" class="form-control Details-option-from" id="mname5"
+									placeholder="请输入地域" required="required">
+								<span class="mclear" id="mclear5"> </span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- 右部分 -->
+				<div class="center-right">
 
-							<!-- <div class="vetify-group">
+					<div class="centerTitle">
+						<h1><a href="javascrip:void(0)">举报信息</a></h1>/
+						<img src="images/sign-out.png" alt="" class="switchImg" id="switchImg" data-toggle="modal"
+							data-target="#myModal" onClick="formdis(1)">
+						<img src="images/modify.png" alt="" class="switchImgNext" id="switchImgNext" data-toggle="modal"
+							data-target="#myModal" onClick="formdis(2)">
+					</div>
+					<!-- 右侧内容开始 -->
+					<div class="rightMar">
+						<p class="Details-option-title topS"> <img src="images/start.png" class="red">危害类型</p>
+						<!-- select -->
+						<select class="selectpicker Details-option-select " style="width: 305px ;height: 38px;">
+							<option>请选择危害类型</option>
+							<option>政治类</option>
+							<option>其他类</option>
+						</select>
+						<p class="Details-option-title topS"> <img src="images/start.png" class="red">被举报类型</p>
+						<select class="selectpicker Details-option-select " style="width: 305px ;height: 38px;">
+							<option>请选择被举报类型</option>
+							<option>网址类</option>
+							<option>其他类</option>
+						</select>
+						<p class="Details-option-title topS"> <img src="images/start.png" class="red">举报内容</p>
+						<!-- 表单输入开始 -->
+						<input type="text" class="form-control DetailsOptionText" placeholder="请输入标题">
+						<textarea class="form-control DetailsOptionTextarea" rows="5"></textarea>
+						<p class="Details-option-title topS"> 上传图片/附件</p>
+						<div style="position:relative; width: 305px;cursor:pointer;">
+							<input type="text" class="form-control  fuJ" placeholder="请上传附件" id="filename" readonly>
+							<!-- 上传尝试 -->
+							<a href="javascript:;" class="file">
+								<button class="OptionyzmImg fuJBtn">浏览</button>
+								<input type="file" name="" id="">
+							</a>
+						</div>
+						<!-- <input type="text" class="form-control  fuJ" placeholder="请上传附件"> -->
+						<p class="Details-option-title topS"> 请输入验证码</p>
+						<div style="position:relative; width: 305px;">
+							<input type="text" class="form-control DetailsOptionyzm lineheight" placeholder="请输入验证码" />
+							<img class="OptionyzmImg" src="./images/verfity.png" alt="验证码图片" />
+						</div>
+						<button class="OptionButton bluecolor">
+							重置
+						</button>
+						<button class="OptionButton">
+							确认
+						</button>
+						<!-- <p class="Details-option-title topS"> 请输入验证码</p> -->
+
+						<!-- <div class="vetify-group">
 								<input type="text" class="form-control-lhj" placeholder="请输入验证码" required />
 								<img class="vetify_style" src="./images/verfity.png" alt="验证码图片" />
 							</div> -->
-						</div>
 					</div>
-					<div style="clear:both;"></div>
 				</div>
+				<div style="clear:both;"></div>
 			</div>
+		</div>
 		<!-- </div> -->
 		<!-- 版权 -->
 		<div class="copyright">
@@ -415,6 +425,14 @@
 	.file:hover {
 		cursor: pointer;
 	}
+	#mname1:valid + #mclear1 {display: block;}
+	#mname2:valid + #mclear2 {display: block;}
+	#mname3:valid + #mclear3 {display: block;}
+	#mname4:valid + #mclear4 {display: block;}
+	#mname5:valid + #mclear5 {display: block;}
+	.relative .required_style{
+		display: none;
+	}
 </style>
 <script type="text/javascript">
 	//输入框的清空事件
@@ -431,7 +449,18 @@
 		var fileName = arr[arr.length - 1];
 		$('#filename').attr('placeholder', fileName);
 	})
-	
+	// 右上角图标转换
+	$("#switchImg").hover(function () {
+		$("#switchImg").attr("src", "images/sign-out-blue.png");
+	}, function () {
+		$("#switchImg").attr("src", "images/sign-out.png");
+	});
+
+	$("#switchImgNext").hover(function () {
+		$("#switchImgNext").attr("src", "images/modify-blue.png");
+	}, function () {
+		$("#switchImgNext").attr("src", "images/modify.png");
+	});
 </script>
 
 </html>
