@@ -111,7 +111,7 @@
                             <button class="OptionyzmImg fuJBtn">浏览</button>
                         </div> -->
                     <div style="position:relative; width: 305px;cursor:pointer;" class="margin-left aRwidth">
-                        <input type="text" class="form-control  fuJ aRwidth" placeholder="请上传附件" id="filename" readonly>
+                        <input type="text" class="form-control  fuJ aRwidth" id="filename" value="" placeholder="请上传附件" readonly>
                         <a href="javascript:;" class="file">
                             <button class="OptionyzmImg fuJBtn">浏览</button>
                             <input type="file" name="" id="">
@@ -388,6 +388,50 @@
 </style>
 <script>
     $(function () {
+		$('input, textarea').placeholder();
+		$('.message .loginadd').click(function () {
+			$('.register-form,.login-form').animate(
+				{
+					height: 'toggle',
+					opacity: 'toggle',
+				},
+				'slow'
+			);
+			document.getElementById('title-retrieve').innerHTML = '登录';
+		});
+		$('.message .nowadd').click(function () {
+			$('.register-form,.login-form').animate(
+				{
+					height: 'toggle',
+					opacity: 'toggle',
+				},
+				'slow'
+			);
+			document.getElementById('title-retrieve').innerHTML = '注册';
+		});
+		$('.message .findadd').click(function () {
+			$('.login-form,.retrieve-password').animate(
+				{
+					height: 'toggle',
+					opacity: 'toggle',
+				},
+				'slow'
+			);
+			document.getElementById('title-retrieve').innerHTML = '密码找回';
+		});
+
+		var $citypicker3 = $('#city-picker3');
+
+		$('#reset').click(function () {
+			$citypicker3.citypicker('reset');
+		});
+
+		$('#destroy').click(function () {
+			$citypicker3.citypicker('destroy');
+		});
+		$('input[required]').before('<span class="required_style">*</span>');
+	});
+    $(function () {
         var picker1 = $('#datetimepicker1').datetimepicker({
             format: 'YYYY-MM-DD',
             locale: moment.locale('zh-cn'),
@@ -410,7 +454,8 @@
         var filePath = $(this).val();
         var arr = filePath.split('\\');
         var fileName = arr[arr.length - 1];
-        $('#filename').attr('placeholder', fileName);
+        // $('#filename').attr('placeholder', fileName);
+        $('#filename').attr('value', fileName);
     })
     // 右上角图标转换
     $("#switchImg").hover(function () {
